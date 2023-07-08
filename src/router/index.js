@@ -19,7 +19,7 @@ const Platform = () => import("../components/Platform.vue")
 const Factors = () => import("../components/Factors.vue")
 export function createRouter() {
     const router =  _createRouter({
-        history: createWebHistory('/BG/'),
+        history: createWebHistory('/Hello-pure-gold/'),
         // base: '/baba-gold-website/',
         routes: [
             { path: "/", name: 'HomePage', component: HomePage },
