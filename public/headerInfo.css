@@ -27,7 +27,7 @@
 }
 
 .doc-banner-container{
-  position: absolute;
+  background-color: var(--secondary-bg);
 }
 
 .docinfo-container{
@@ -106,16 +106,39 @@
 
 .nav-container {
   padding: 20px 120px;
-  position: relative;
-  left: 32%;
-  z-index: 1;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
 }
 
 .nav-container p{
-  color: var(--color-bg);
-  margin-right: 70px;
+  color: black;
   position: relative;
   z-index: 1;
+}
+
+.nav-itm-container{
+  position: relative;
+  display: flex;
+}
+
+.drp-dwn-container{
+  position: absolute;
+  width: 250px;
+  top: 45px;
+  z-index: 1;
+}
+
+.drp-dwn-container > ul{
+  list-style: none;
+  background-color: var(--color-bg);
+  display: flex;
+  flex-direction: column;
+}
+
+.drp-dwn-container > ul > li{
+  font-size: 14px;
+  padding: 10px;
 }
 
 .underline-anim:after{

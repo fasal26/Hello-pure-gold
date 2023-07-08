@@ -24,13 +24,14 @@
 
 :root {
     --font-family: 'Montserrat', sans-serif;
-    --color-bg: #e7e7e7;
-    --underline: #e7d51a;
+    --color-bg: #d3aa4c;
+    --secondary-bg: #d3aa4c;
+    --underline: #1d150a;
     --color-text: #8D96A3;
     --dark-blue: #0a473f;
     --color-dark-blue: #1C265B;
     --color-gold: #ffb50a;
-    --color-dark-gold: #eda505;
+    --color-dark-gold: #1d150a;
     --sa-custom-v1: #002A56;
     --nav-background: #6a6868
   }
@@ -91,9 +92,9 @@ p {
   display: flex;
 }
 
-.sa-dialog p{
+/* .sa-dialog p{
   color: #FFFFFF;
-}
+} */
 
 .sa-dialog-body > p{
   font-size: 20px;
@@ -104,19 +105,22 @@ p {
 
 .dialog-items-container{
   margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .dialog-items-container > p{
   padding-bottom: 20px;
 }
 
-.dialog-items{
+/* .dialog-items{
   padding-bottom: 30px;
-}
+} */
 
-.dialog-items > p{
+/* .dialog-items > p{
   padding-left: 22px;
-}
+} */
 
 .dialog-items > img{
   width: 22px;
@@ -132,7 +136,7 @@ p {
 }
 
 .sa-dialog-body {
-  background: transparent;
+  background: var(--color-bg);;
   position: absolute;
   width: 63%;
 }

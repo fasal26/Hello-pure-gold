@@ -1,5 +1,5 @@
 <template>
-    <div class="baba-flex-col doc-padding desc-container">
+    <!-- <div class="baba-flex-col doc-padding desc-container">
         <hr>
         <h2 class="baba-flex">Why Choose Baba Gold?</h2>
         <p><span>Experience the power of gold:</span> Discover the timeless allure and wealth-building potential of gold, a precious metal that has stood the test of time as a reliable investment.
@@ -18,17 +18,17 @@
             <li class="baba-flex"><img src="../Assets/001-correct.png" alt="">Limited Supply</li>
             <li class="baba-flex"><img src="../Assets/001-correct.png" alt="">Investment Asset</li>
         </ul>
-    </div>
+    </div> -->
     <div class="footer-container" id="footer">
         <div class="footer-items-container">
-            <p>At <strong>Baba Gold</strong>, we specialize in providing unparalleled expertise and guidance in the exciting world of bullion and gold trading</p>
+            <p>At <strong>Hello Pure Gold</strong>, we specialize in providing unparalleled expertise and guidance in the exciting world of bullion and gold trading</p>
             <div class="cntnt-items-container">
                 <strong>Company</strong>
                 <ul class="baba-flex-col">
-                    <li class="pointer">About Us</li>
-                    <!-- <li class="pointer">Contact Us</li> -->
-                    <li class="pointer">Our Mission</li>
-                    <li class="pointer">Trading</li>
+                    <li class="pointer" @click="$router.push('/about')">About Us</li>
+                    <li class="pointer" @click="$router.push('/why-us')">Why us</li>
+                    <li class="pointer" @click="$router.push('/services')">Services</li>
+                    <li class="pointer" @click="$router.push('/aml-policy')">AML Policy</li>
                 </ul>
             </div>
         </div>
@@ -37,13 +37,12 @@
                 <!-- <strong>newsletter</strong> -->
                 <p>Contact details</p>
                 <div class="news-letter-items baba-flex">
-                    <p>+971 4 2501199</p>
-                    <p>+971 56 883 5211</p>
-                    <p>info@bgt-au.com</p>
+                    <p>+97143490037</p>
+                    <p>anowar.48@gmail.com </p>
                 </div>
                 <p>Address</p>
                 <div class="news-letter-items baba-flex">
-                    <p>Shop No 1, Sikka 28 Street Al Dhagaya, Near By Womens Museum, Gold Souq Behind Rak Bank, Dubai - U.A.E</p>
+                    <p>Office # 168, Level # 6, Gold Center Building Deira Gold Souk - Dubai,United Arab Emirates, Sylla Gold Trading branch</p>
                 </div>
                 <!-- <div class="email">
                     <input type="text" class="mail-input">

@@ -129,6 +129,10 @@
         gap: 20px;    
     }
 
+    .drp-dwn-container {
+        position: initial;
+    }
+
     .store {
         gap: 0;
         justify-content: space-evenly;

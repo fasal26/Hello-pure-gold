@@ -1,71 +1,115 @@
 <template>
     <div class="trading-container">
-        <h1>Trading</h1>
-        <h3 class="baba-flex">Baba Gold Trading Procedure</h3>
+        <h1> Anti-Money Laundering (AML) Policy</h1>
+        <!-- <h3 class="baba-flex">Baba Gold Trading Procedure</h3> -->
         <div class="baba-flex pltfm-list">
-            <strong>Step 1 :</strong>
+            <!-- <strong>Step 1 :</strong> -->
             <p>
-                Research and Analysis Begin by conducting thorough research and analysis of the gold market. Stay updated on current market trends, gold price fluctuations, and any relevant news or events that may impact the market. This will help you make informed trading decisions.
+                Introduction Hello Pure Gold is committed to upholding the highest standards of integrity, ethics, and
+                compliance with all applicable anti-money laundering and counter-terrorism financing laws and
+                regulations. This Anti-Money Laundering (AML) Policy outlines our commitment to preventing and
+                detecting any attempts to use our services for illicit activities, such as money laundering, terrorism
+                financing, or any 
             </p>
         </div>
         <div class="baba-flex pltfm-list">
-            <strong>Step 2 :</strong>
+            <!-- <strong>Step 2 :</strong> -->
             <p>
-                Determine Investment Goals and Risk Tolerance Define your investment goals and assess your risk tolerance. Are you looking for short-term gains or long-term investment opportunities? Understand the level of risk you are comfortable with, as it will influence your trading strategy.
-                <span class="pointer read-more" v-if="$route.path == '/'" @click="$router.push('/trading')" 
-                    style="margin-left: 10px">read more</span>
+                Compliance Officer Hello Pure Gold has designated a Compliance Officer responsible for overseeing the
+                implementation and effectiveness of our AML program. The Compliance Officer serves as the point of contact for all AML-related matters and ensures ongoing compliance with relevant laws and regulations.
             </p>
         </div>
-        <template v-if="$route.path == '/trading'">
+        <!-- <template v-if="$route.path == '/trading'"> -->
             <div class="baba-flex pltfm-list">
-                <strong>Step 3 :</strong>
+                <!-- <strong>Step 3 :</strong> -->
                 <p>
-                    Select the Right Gold Product Choose the gold product that aligns with your investment goals and risk tolerance. Consider factors such as liquidity, purity, size, and form (bullion bars, coins, jewelry, impure gold). Consult our knowledgeable team for personalized recommendations.
+                    Customer Due Diligence (CDD) We perform thorough customer due diligence measures to establish the
+                    identity and legitimacy of our customers. This includes obtaining and verifying identification
+                    information, such as government-issued identification documents, proof of address, and any other
+                    necessary documentation.
                 </p>
             </div>
             <div class="baba-flex pltfm-list">
-                <strong>Step 4 :</strong>
+                <!-- <strong>Step 4 :</strong> -->
                 <p>
-                    Price Analysis and Evaluation Perform a detailed price analysis and evaluation. Assess the current market price, premiums, and any additional costs associated with the chosen gold product. This step ensures that you make an informed decision based on the gold's fair value.
+                    Know Your Customer (KYC) We adhere to a strict Know Your Customer (KYC) policy, which involves
+                    obtaining sufficient information to understand the nature of our customers' business, their source of
+                    funds, and their intended use of our services. We may request additional documentation or conduct
+                    enhanced due diligence for higher-risk transactions or customers.
                 </p>
             </div>
             <div class="baba-flex pltfm-list">
-                <strong>Step 5 :</strong>
+                <!-- <strong>Step 5 :</strong> -->
                 <p>
-                    Place Your Order Once you have decided on the gold product and evaluated the price, place your order with Baba Gold. Our experienced team will guide you through the order placement process, ensuring a seamless and secure transaction.
+                    Reporting Suspicious Activities Hello Pure Gold is committed to promptly reporting any suspicious
+                    activities or transactions that may be indicative of money laundering, terrorism financing, or other
+                    unlawful acts. Our staff is trained to recognize red flags and report suspicious activities to the
+                    appropriate authorities as 
                 </p>
             </div>
             <div class="baba-flex pltfm-list">
-                <strong>Step 6 :</strong>
+                <!-- <strong>Step 6 :</strong> -->
                 <p>
-                    Secure Payment and Verification Make your payment using our secure payment methods. We offer various payment options to suit your convenience. Once the payment is received, we will verify the transaction and initiate the delivery process.
+                    ecord Keeping, we maintain accurate and up-to-date records of all customer information, transactions, and due diligence documentation in compliance with applicable laws and regulations. These records are securely stored and made available to regulatory authorities upon request.
                 </p>
             </div>
             <div class="baba-flex pltfm-list">
-                <strong>Step 7 :</strong>
+                <!-- <strong>Step 7 :</strong> -->
                 <p>
-                    Delivery or Storage Choose whether you prefer physical delivery of your gold or secure storage services. If you select delivery, our team will arrange for safe and insured shipping to your designated location. If you opt for storage, your gold will be securely stored in our trusted facilities.
+                    Ongoing Monitoring, we employ ongoing monitoring procedures to detect and prevent any suspicious or potentially unlawful activities. This includes regularly reviewing customer accounts, transactions, and activities for any anomalies or deviations from expected patterns.
                 </p>
             </div>
             <div class="baba-flex pltfm-list">
-                <strong>Step 8 :</strong>
+                <!-- <strong>Step 8 :</strong> -->
                 <p>
-                    Continuous Monitoring and Review Regularly monitor the gold market and review your investment portfolio. Stay updated on market conditions and assess whether adjustments or actions are necessary to align with your investment goals.
+                    Employee Training and Awareness Hello Pure Gold provides comprehensive training to all employees
+                    to ensure they understand their responsibilities and obligations regarding AML compliance. Our staff is
+                    regularly updated on emerging AML trends, regulatory changes, and best practices to enhance their
+                    knowledge and awareness.
                 </p>
             </div>
             <div class="baba-flex pltfm-list">
-                <strong>Step 9 :</strong>
+                <!-- <strong>Step 9 :</strong> -->
                 <p>
-                    Sell or Trade When the time is right and you wish to sell or trade your gold, contact Baba Gold to explore your options. Our team will provide guidance on market conditions and help you execute the transaction.
+                    Cooperation with Authorities We maintain a cooperative relationship with regulatory authorities and
+                    law enforcement agencies. We will provide full assistance, including sharing information and records, to the extent permitted by law, to aid in any investigations related to money laundering or terrorism
+                    financing
                 </p>
             </div>
             <div class="baba-flex pltfm-list">
-                <strong>Step 10 :</strong>
+                <!-- <strong>Step 10 :</strong> -->
                 <p>
-                    Exceptional Customer Support Throughout the trading process, Baba Gold provides exceptional customer support. Our knowledgeable team is available to address any inquiries, provide market insights, and offer ongoing assistance. This will ensure a smooth and satisfactory trading experience.
+                    Confidentiality and Data Protection We prioritize the confidentiality and protection of customer
+                    information. We implement robust data protection measures to safeguard customer data from
+                    unauthorized access, use, or disclosure.
                 </p>
             </div>
-            <h3 class="baba-flex">Trading Tips for Successful Gold Investors</h3>
+            <div class="baba-flex pltfm-list">
+                <!-- <strong>Step 11 :</strong> -->
+                <p>
+                    Compliance Review Hello Pure Gold conducts periodic reviews and audits of our AML program to
+                    assess its effectiveness, identify areas for improvement, and ensure ongoing compliance with
+                    applicable laws and regulations.
+                </p>
+            </div>
+            <div class="baba-flex pltfm-list">
+                <!-- <strong>Step 12 :</strong> -->
+                <p>
+                    Non-Tolerance Policy Hello Pure Gold has a zero-tolerance policy towards any involvement in money
+                    laundering, terrorism financing, or any other unlawful activities. We will take immediate action,
+                    including reporting suspicious activities, freezing accounts, and terminating relationships, as deemed
+                    necessary to prevent and mitigate such activities.
+                </p>
+            </div>
+            <div class="baba-flex pltfm-list">
+                <!-- <strong>Step 13 :</strong> -->
+                <p>
+                    Review and Update This AML Policy will be reviewed and updated periodically to reflect changes in
+                    regulatory requirements, industry best practices, and the evolving nature of money laundering and
+                    terrorism financing ris
+                </p>
+            </div>
+            <!-- <h3 class="baba-flex">Trading Tips for Successful Gold Investors</h3>
             <div class="baba-flex pltfm-list">
                 <strong>Educate Yourself :</strong>
                 <p>
@@ -125,8 +169,8 @@
                 <p>
                     Successful gold trading requires patience. Avoid chasing short-term gains and understand that market trends take time to develop. Stick to your long-term investment plan and avoid hasty decisions.
                 </p>
-            </div>
-        </template>
+            </div> -->
+        <!-- </template> -->
     </div>
 </template>
 

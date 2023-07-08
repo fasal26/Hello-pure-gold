@@ -1,64 +1,83 @@
 <template>
     <div class="platfm-container">
-        <h1>Factors Affecting Gold Price</h1>
+        <h1>Why Choose Hello Pure Gold?</h1>
         <p>
-          Gold prices are influenced by various factors, both directly and indirectly. Understanding these factors can help investors and traders make informed decisions. Here are some key factors that impact gold price action:
+            Choosing to do business with Hello Pure Gold means partnering with a company that offers trust, quality, expertise, comprehensive services, compliance, personalized experiences, secure operations, and social responsibility. We strive to
+            exceed customer expectations and provide a seamless and rewarding experience in bullion and precious metal trading.
         </p>
             <div class="baba-flex fctr-list">
-                <strong>Supply and Demand :</strong>
+                <strong> Trusted Reputation :</strong>
                 <p>
-                    Supply and demand dynamics play a significant role in determining gold prices. Increased demand for gold, whether for jewelry, investment purposes, or industrial use, can drive prices higher. Similarly, a decrease in demand or an increase in gold supply can lower prices.
+                    Hello Pure Gold has built a strong reputation as a trusted provider of bullion and precious
+                    metal services. Our commitment to integrity, transparency, and exceptional customer service sets us apart. We
+                    have a track record of delivering on our promises and establishing long-term relationships 
                 </p>
             </div>
             <div class="baba-flex fctr-list">
-                <strong>Global Economic Conditions :</strong>
+                <strong> High-Quality Products :</strong>
                 <p>
-                    Gold is often seen as a safe-haven asset during economic uncertainty. Economic factors such as GDP growth, inflation rates, interest rates, and geopolitical tensions influence gold prices. Economic downturns or financial crises may increase gold demand as investors seek a hedge against volatility in other markets.
-                    <span class="pointer read-more" v-if="$route.path == '/'" @click="$router.push('/factors')" 
-                    style="margin-left: 10px">read more</span>
+                    We source our bullion and precious metals from prestigious mints and refineries
+                    worldwide. Every product in our collection undergoes rigorous inspection to ensure authenticity, purity, and
+                    impeccable craftsmanship. We offer a wide range of options, allowing customers to choose from a diverse
+                    selection of bullion and precious metals.
+                    <!-- <span class="pointer read-more" v-if="$route.path == '/'" @click="$router.push('/factors')" 
+                    style="margin-left: 10px">read more</span> -->
                 </p>
             </div>
-            <template v-if="$route.path == '/factors'">
+            <!-- <template v-if="$route.path == '/factors'"> -->
                 <div class="baba-flex fctr-list">
-                    <strong>Central Bank Policies :</strong>
+                    <strong> Expertise and Guidance :</strong>
                     <p>
-                        Central banks' decisions regarding interest rates, monetary policies, and currency management can directly affect gold prices. Lower interest rates or expansionary monetary policies typically increase gold's attractiveness as an alternative investment, leading to higher prices.
+                        Our team of experienced professionals knows the bullion market, economic trends, and
+                        investment strategies. We are dedicated to providing expert guidance to our customers, helping them make
+                        informed decisions and navigate the precious metals market.
                     </p>
                 </div>
                 <div class="baba-flex fctr-list">
-                    <strong>US Dollar Strength :</strong>
+                    <strong> Comprehensive Services :</strong>
                     <p>
-                        The US dollar and gold often exhibit an inverse relationship. Since gold is priced in US dollars globally, a stronger US dollar typically makes gold relatively more expensive for holders of other currencies. Conversely, a weaker US dollar can increase gold demand and push prices higher.
+                        Hello Pure Gold offers a comprehensive suite of services to cater to our customers' diverse needs. From protected worldwide deliveries, trading and risk management support, financing options, assaying, refining, location swaps, to secure storage and warehousing, we cover all aspects of bullion and
+                        precious metal transactions, ensuring a seamless and and satisfying experience
                     </p>
                 </div>
                 <div class="baba-flex fctr-list">
-                    <strong>Investor Sentiment and Speculation :</strong>
+                    <strong> Commitment to Compliance :</strong>
                     <p>
-                        Psychological factors, such as investor sentiment and market speculation, can influence short-term price movements. Market participants' expectations, sentiment towards risk, and speculative trading activities can lead to price fluctuations even without significant changes in the underlying fundamentals.
+                        We are fully committed to compliance with all applicable laws and regulations,
+                        including anti-money laundering (AML) and counter-terrorism financing (CTF) requirements. Our robust AML
+                        program ensures the highest standards of integrity and safeguards against illicit activities, providing customers
+                        with peace of mind
                     </p>
                 </div>
                 <div class="baba-flex fctr-list">
-                    <strong>Inflation and Currency Devaluation :</strong>
+                    <strong>Personalized Customer Experience :</strong>
                     <p>
-                        Gold is often considered a hedge against inflation and currency devaluation. When inflation rises or when there are concerns about the stability of a particular currency, investors may turn to gold as a store of value, driving up demand and prices.
+                        Hello Pure Gold prioritizes building strong relationships with our customers. We understand their unique needs, preferences, and investment goals. Our dedicated team is committed to delivering personalized customer experiences, offering tailored solutions and exceptional support at every step
+                        of the journey.
                     </p>
                 </div>
                 <div class="baba-flex fctr-list">
-                    <strong>Interest Rates and Opportunity Cost :</strong>
+                    <strong> Secure and Reliable Operations: :</strong>
                     <p>
-                        The opportunity cost of holding gold plays a role in its price. When interest rates are low, the opportunity cost of holding non-yielding assets like gold decreases, making it more attractive for investors. Conversely, higher interest rates may divert investment away from gold and lower prices.
+                        We place a high priority on our operations' security and reliability. From secure
+                        storage and transportation to advanced monitoring systems, we implement stringent security measures to
+                        safeguard our customers' assets. We adhere to best practices and industry standards, ensuring the highest level
+                        of protection for our customers' investments.
                     </p>
                 </div>
                 <div class="baba-flex fctr-list">
-                    <strong>Technological and Industrial Demand :</strong>
+                    <strong> Social Responsibility :</strong>
                     <p>
-                        Gold is used in various commercial applications, including electronics, medical devices, and aerospace technology. Technological advancements and changes in industrial demand can influence gold prices, especially in the long term.
+                        Hello Pure Gold is a socially responsible company that values ethical and sustainable
+                        practices. We actively promote responsible sourcing, environmental stewardship, and support initiatives that
+                        make a positive impact within the bullion industry and the communities we serve.
                     </p>
                 </div>
                 <p style="padding-top:25px">
-                    It's critical to note that these factors can interact and influence each other, leading to complex price dynamics in the gold market. Monitoring these factors and staying informed about global economic and geopolitical developments can help investors anticipate price movements and make informed decisions when trading or investing in gold.
+                    Choosing to do business with Hello Pure Gold means partnering with a company that offers trust, quality, expertise, comprehensive services, compliance, personalized experiences, secure operations, and social responsibility. We strive to
+                    exceed customer expectations and provide a seamless and rewarding experience in bullion and precious metal trading.
                 </p>
-            </template>
+            <!-- </template> -->
     </div>
 </template>
 
