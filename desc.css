@@ -1,13 +1,14 @@
 .desc-container {
-    margin: 100px 0;
+    background-color: #e7e7e7;
+    padding: 70px 120px 100px;
 }
 
 .desc-container > h2{
     justify-content: center;
     color: var(--color-dark-gold);
-    margin-top: 25px;
     font-size: 33px;
     font-weight: bold;
+    padding-bottom: 50px;
 }
 
 .desc-container > ul{
@@ -27,4 +28,19 @@
     gap: 10px;
     align-items: center;
     color: #8D96A3;
+}
+
+.top-rsn{
+    display: flex;
+    justify-content: space-around;
+}
+
+.top-rsn > ul{
+    flex-direction: column;
+    gap: 15px;
+}
+
+.top-rsn > ul > li{
+    gap: 10px;
+    align-items: center;
 }
