@@ -22,7 +22,37 @@
           </div>
       </div>
   </div>
-  <div class="baba-flex-col doc-padding baba-svc-container" id="services">
+  <div class="baba-abtus-conatiner">
+      <div class="baba-flex baba-abtus">
+          <img src="../Assets/scottsdale-mint2.jpg" alt="">
+          <div class="baba-flex-col abt-cntnt">
+              <h2>Our Vision</h2>
+              <p>
+                At Hello Pure Gold, our vision is to transform the bullion industry by providing accessible, transparent, and innovative solutions for investors worldwide
+              </p>
+              <p>
+                We are committed to offering high-quality bullion products that meet the highest standards of authenticity and purity. Our goal is to revolutionize the way people perceive and engage with gold investments, making them more accessible and convenient for everyone. Through cutting-edge technology and a customer-centric approach, we strive to empower individuals to secure their financial futures with confidence.
+              </p>
+              <!-- <span class="pointer read-more" @click="handleRoute('/about')">read more</span> -->
+          </div>
+      </div>
+  </div>
+  <div class="baba-abtus-conatiner">
+      <div class="baba-flex baba-abtus">
+          <img src="../Assets/scottsdale-mint2.jpg" alt="">
+          <div class="baba-flex-col abt-cntnt">
+              <h2>Our Mission</h2>
+              <p>
+                At Hello Pure Gold, our mission is to provide a seamless and rewarding experience for individuals looking to invest in precious metals
+              </p>
+              <p>
+                We are dedicated to offering a wide range of authentic bullion products and comprehensive services that cater to the unique needs of our customers. Through our commitment to integrity, transparency, and exceptional customer service, we aim to build lasting relationships based on trust and mutual success.
+              </p>
+              <!-- <span class="pointer read-more" @click="handleRoute('/about')">read more</span> -->
+          </div>
+      </div>
+  </div>
+  <div class="baba-flex-col baba-svc-container" id="services">
       <h2 class="baba-flex">Services</h2>
       <div class="baba-flex cards-container">
           <div class="baba-flex card">
@@ -106,25 +136,31 @@
           </div>
       </div>
   </div>
-  <!-- <div class="baba-flex-col doc-padding desc-container">
-    <h2 class="baba-flex">Why Choose Baba Gold?</h2>
-    <p>Experience the power of gold: Discover the timeless allure and wealth-building potential of gold, a precious metal that has stood the test of time as a reliable investment.
+  <div class="baba-flex-col desc-container">
+    <h2 class="baba-flex">Top reasons to do business with us</h2>
+    <!-- <p>Experience the power of gold: Discover the timeless allure and wealth-building potential of gold, a precious metal that has stood the test of time as a reliable investment.
         Expertise you can trust: Our team of seasoned professionals brings years of industry experience and knowledge to help you make informed trading decisions.
         Tailored solutions for you: We understand that every investor is unique, which is why we offer personalized services tailored to your specific needs, risk tolerance, and financial goals.
         Transparent and ethical: At Baba Gold, we uphold the highest ethical standards, ensuring transparency in our pricing, information, and reporting.
         Education and empowerment: We believe in equipping our clients with the knowledge and tools they need to succeed. Benefit from our educational resources, market insights, and expert guidance.
-        Discover the World of Bullion and Forex Trading</p>
-    <ul class="baba-flex">
-        <li class="baba-flex"><img src="../Assets/001-correct.png" alt="">Store of Value</li>
-        <li class="baba-flex"><img src="../Assets/001-correct.png" alt="">Diversification</li>
-        <li class="baba-flex"><img src="../Assets/001-correct.png" alt="">Hedge against Inflation</li>
-        <li class="baba-flex"><img src="../Assets/001-correct.png" alt="">Jewelry and Ornamental Use</li>
-        <li class="baba-flex"><img src="../Assets/001-correct.png" alt="">Industrial Applications</li>
-        <li class="baba-flex"><img src="../Assets/001-correct.png" alt="">Historical Significance</li>
-        <li class="baba-flex"><img src="../Assets/001-correct.png" alt="">Limited Supply</li>
-        <li class="baba-flex"><img src="../Assets/001-correct.png" alt="">Investment Asset</li>
-    </ul>
-  </div> -->
+        Discover the World of Bullion and Forex Trading</p> -->
+    <div class="top-rsn">
+        <ul class="baba-flex">
+            <li class="baba-flex"><img src="../Assets/001-correct.png" alt="" id="correct">Risk Management</li>
+            <li class="baba-flex"><img src="../Assets/001-correct.png" alt="" id="correct">Wholesale Trading</li>
+            <li class="baba-flex"><img src="../Assets/001-correct.png" alt="" id="correct">Margin Trading</li>
+            <li class="baba-flex"><img src="../Assets/001-correct.png" alt="" id="correct">Global Deliveries</li>
+            <li class="baba-flex"><img src="../Assets/001-correct.png" alt="" id="correct">Reliable Refining Services</li>
+        </ul>
+        <ul class="baba-flex">
+            <li class="baba-flex"><img src="../Assets/001-correct.png" alt="" id="correct">Assaying Expertise</li>
+            <li class="baba-flex"><img src="../Assets/001-correct.png" alt="" id="correct">Purity Testing</li>
+            <li class="baba-flex"><img src="../Assets/001-correct.png" alt="" id="correct">Gold Location Swaps</li>
+            <li class="baba-flex"><img src="../Assets/001-correct.png" alt="" id="correct">Foreign Currency Pricing</li>
+            <li class="baba-flex"><img src="../Assets/001-correct.png" alt="" id="correct">Trusted Gold Wholesalers</li>
+        </ul>
+    </div>
+  </div>
 </template>
 
 <script setup>

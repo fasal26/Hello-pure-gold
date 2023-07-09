@@ -4,12 +4,12 @@
         <div class="docdet-mob doc-padding" @click="openMenu">
             <img src="../Assets/bars-staggered.png" alt="menu" class="navbar_menu" id="burger">
         </div>
-        <!-- <img src="../Assets/babagoldtrans.png" alt="" class="logo"> -->
+        <img src="../Assets/HPGTrans.png" alt="" class="logo pointer" @click="handleRoute('/')">
         <div class="doc-flex nav-container">
             <div class="nav-itm-container">
                 <p class="pointer underline-anim"
                     @click="hndlDrpDwn('isHome')">Our Company</p>
-                    <img src="../Assets/down-arrow.png" alt="" style="width: 30px;height: 30px;position: relative;bottom: 3px;">
+                    <img src="../Assets/down-arrow-wh.png" alt="">
                 <div class="drp-dwn-container" v-if="isHome">
                     <ul>
                         <li @click.self="handleRoute('/about')" 
@@ -23,7 +23,7 @@
             <div class="nav-itm-container">
                 <p class="pointer underline-anim" @click="hndlDrpDwn('srvcFlg')"
                     >Services</p>
-                <img src="../Assets/down-arrow.png" alt="" style="width: 30px;height: 30px;position: relative;bottom: 3px;">
+                <img src="../Assets/down-arrow-wh.png" alt="">
                 <div class="drp-dwn-container" v-if="srvcFlg">
                     <ul>
                         <li @click.self="handleRoute('/services')"  class="pointer">Protected Deliveries Worldwide</li>
@@ -110,13 +110,5 @@ function scrollInto(id){
 <style scoped>
 .route-active:after{
     width: 100%;
-}
-
-.logo{
-    height: 120px;
-    width: 100px;
-    position: absolute;
-    top: 2px;
-    left: 23px;
 }
 </style>

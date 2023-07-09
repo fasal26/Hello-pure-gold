@@ -6,7 +6,7 @@
                 <div class="dialog-items doc-flex" @click="hndlDrpDwn('isHome')">
                     <!-- <img src="../Assets/home.svg" alt=""> -->
                     <p>Our Company</p>
-                    <img src="../Assets/down-arrow.png" alt="" style="width: 30px;height: 30px;position: relative;bottom: 3px;">
+                    <img src="../Assets/down-arrow-wh.png" alt="">
                 </div>
                 <div class="drp-dwn-container" v-if="isHome">
                     <ul>
@@ -20,7 +20,7 @@
                 <div class="dialog-items doc-flex" @click="hndlDrpDwn('srvcFlg')">
                     <!-- <img src="../Assets/about.svg" alt=""> -->
                     <p>Services</p>
-                    <img src="../Assets/down-arrow.png" alt="" style="width: 30px;height: 30px;position: relative;bottom: 3px;">
+                    <img src="../Assets/down-arrow-wh.png" alt="">
                 </div>
                 <div class="drp-dwn-container" v-if="srvcFlg">
                     <ul>

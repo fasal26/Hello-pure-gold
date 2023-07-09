@@ -24,7 +24,7 @@
 
 :root {
     --font-family: 'Montserrat', sans-serif;
-    --color-bg: #d3aa4c;
+    --color-bg: #a27532;
     --secondary-bg: #d3aa4c;
     --underline: #1d150a;
     --color-text: #8D96A3;
@@ -44,7 +44,7 @@
 }
 
 body{
-  background-color: var(--color-bg);
+  /* background-color: var(--color-bg); */
     font-family: var(--font-family);
     overflow: auto;
 }
@@ -57,6 +57,7 @@ hr {
 
 p {
   line-height: 25px;
+  /* color: white; */
 }
 
 .pt-100{
@@ -96,6 +97,10 @@ p {
   color: #FFFFFF;
 } */
 
+.sa-dialog-body p{
+  color: white;
+}
+
 .sa-dialog-body > p{
   font-size: 20px;
   font-family: 'Anton', sans-serif;
@@ -123,8 +128,11 @@ p {
 } */
 
 .dialog-items > img{
-  width: 22px;
-  height: 22px;
+  width: 17px;
+  height: 18px;
+  position: relative;
+  bottom: -4px;
+  left: 4px;
 }
 
 .sa-fixed-right {

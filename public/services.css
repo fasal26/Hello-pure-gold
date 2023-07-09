@@ -1,9 +1,13 @@
+.baba-svc-container{
+    padding: 100px 120px;
+}
+
 .baba-svc-container > h2{
     justify-content: center;
-    padding: 50px 0;
     color: var(--color-dark-gold);
     font-size: 40px;
     font-weight: bold;
+    padding-bottom: 50px;
 }
 
 /* .baba-svc-container{
@@ -15,9 +19,9 @@
     box-shadow: 0 0px 10px 0 rgba(0,0,0,.1);
     padding: 40px;
     border-radius: 10px;
-    max-width: 40%;
+    max-width: 30%;
     gap: 30px;
-    border: 1px solid #1d150a;
+    border: none;
 }
 
 .card > img{
@@ -26,11 +30,12 @@
 }
 
 .svc-cntnt > h4{
-    color: var(--sa-custom-v1);
+    color: white;
     padding-bottom: 25px;
 }
 
 .svc-cntnt > p{
+    color: white;
     line-height: 23px;
 }
 
@@ -38,4 +43,12 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 50px;
+}
+
+.cards-container > .card:nth-child(odd) {
+    background-color: var(--color-bg);
+}  
+
+.cards-container > .card:nth-child(even){
+    background-color: #504324;
 }

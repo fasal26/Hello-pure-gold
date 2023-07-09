@@ -22,7 +22,8 @@
     }
 
     .desc-container {
-        margin: 30px 0;
+        /* margin: 30px 0; */
+        padding: 20px;
     }
 
     .desc-container > h2 {
@@ -49,7 +50,7 @@
 
     .baba-abtus-conatiner {
         margin-top: 80px;
-        margin-bottom: 30px;
+        margin-bottom: 0;
     }
 
     .baba-abtus-mob{
@@ -71,11 +72,12 @@
 
     .baba-svc-container {
         flex-direction: column;
+        padding: 25px;
     }
 
-    .baba-svc-container > h2 {
+    /* .baba-svc-container > h2 {
         padding: 30px 0;
-    }
+    } */
 
     .card {
         max-width: initial;
@@ -173,6 +175,11 @@
         height: 80px;
     }
 
+    .top-rsn {
+        flex-direction: column;
+        gap: 15px;
+    }
+
     /* THE END */
 
     .doc-none{
@@ -223,9 +230,9 @@
         font-size: 22px;
     }
 
-    .doc-banner-container > img{
+    /* .doc-banner-container > img{
         height: inherit;
-    }
+    } */
 
     .docdet-mob{
         display: flex;
@@ -370,9 +377,9 @@
         padding-top: 22px;
     }
 
-    .footer-container {
+    /* .footer-container {
         margin-top: 90px;
-    }
+    } */
 
     .nav-item2 > p{
         text-align: end;

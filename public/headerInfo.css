@@ -27,7 +27,7 @@
 }
 
 .doc-banner-container{
-  background-color: var(--secondary-bg);
+  background-color: var(--color-bg);
 }
 
 .docinfo-container{
@@ -112,14 +112,24 @@
 }
 
 .nav-container p{
-  color: black;
   position: relative;
   z-index: 1;
+  font-weight: 500;
+  font-size: 14px;
+  color: white;
 }
 
 .nav-itm-container{
   position: relative;
   display: flex;
+}
+
+.nav-itm-container > img{
+  width: 17px;
+  height: 18px;
+  position: relative;
+  bottom: -4px;
+  left: 4px;
 }
 
 .drp-dwn-container{
@@ -139,6 +149,7 @@
 .drp-dwn-container > ul > li{
   font-size: 14px;
   padding: 10px;
+  color: white;
 }
 
 .underline-anim:after{
@@ -146,7 +157,7 @@
   width: 0;
   display: block;
   height: 1.5px;
-  background-color: var(--underline);
+  background-color: white;
   transition: width 0.3s ease-in;
   position: absolute;
   bottom: -2px;
@@ -169,5 +180,13 @@
   font-size: 50px;
   max-width: 49%;
   left: 30px;
+}
+
+.logo{
+  position: absolute;
+  top: -21px;
+  left: 23px;
+  width: 110px;
+  height: 110px;
 }
 
