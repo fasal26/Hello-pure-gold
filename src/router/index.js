@@ -19,6 +19,7 @@ const Platform = () => import("../components/Platform.vue")
 const Factors = () => import("../components/Factors.vue")
 const ChairmanMessage = () => import("../components/ChairmanMessage.vue")
 const ProductImages = () => import("../components/ProductImages.vue")
+const Auth = () => import("../components/Auth.vue")
 export function createRouter() {
     const router =  _createRouter({
         history: createWebHistory('/Hello-pure-gold/'),
@@ -35,6 +36,7 @@ export function createRouter() {
             { path: "/why-us", name: 'Why us', component: Factors },
             { path: "/chairman-message", name: 'chairman message', component: ChairmanMessage },
             { path: "/products", name: 'products', component: ProductImages },
+            { path: "/auth", name: 'authentication', component: Auth },
             // { path: '/:pathMatch(.*)*', redirect: "/" },
         ],
         // scrollBehavior() {

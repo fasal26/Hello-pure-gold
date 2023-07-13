@@ -54,6 +54,8 @@
                 >Why Us</p>
             <p class="pointer underline-anim" @click="scrollInto('footer')" 
                 >Contact Us</p>
+            <p class="pointer underline-anim" @click="handleRoute('/auth')" 
+                >Login / Signup</p>
         </div>
     </div>
     <MobileNavbar/>
