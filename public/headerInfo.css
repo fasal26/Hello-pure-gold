@@ -105,7 +105,7 @@
 }
 
 .nav-container {
-  padding: 20px 120px;
+  padding: 35px 120px;
   display: flex;
   justify-content: center;
   gap: 60px;
@@ -184,7 +184,7 @@
 
 .logo{
   position: absolute;
-  top: -21px;
+  top: -8px;
   left: 23px;
   width: 110px;
   height: 110px;

@@ -39,6 +39,18 @@
     line-height: 23px;
 }
 
+.svc-cntnt > span {
+    position: relative;
+    top: 10px;
+    background-color: white;
+    border-radius: 4px;
+    padding: 6px;
+}
+
+.svc-cntnt > span {
+    font-size: 12px;
+}
+
 .cards-container{
     flex-wrap: wrap;
     justify-content: center;
@@ -51,4 +63,56 @@
 
 .cards-container > .card:nth-child(even){
     background-color: #504324;
+}
+
+.svc-gllry-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.svc-img{
+    max-width: 40%;
+    /* display: flex;
+    flex-direction: column;
+    gap: 20px; */
+}
+
+.svc-ctnt{
+    height: 19rem;
+    border-radius: 20px;
+    width: 98%;
+}
+
+.svc-ctnt > h3{
+    padding: 20px 0;
+}
+
+.svc-img > figure > img{
+    height: 19rem;
+    border-radius: 20px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.tradingview-widget-container{
+    padding: 0 100px 100px;
+}
+
+.tradingview-widget-container > h1{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.baba-prd-cntnr{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px 90px;
+}
+
+.baba-prd-cntnr > img{
+    width: 250px;
+    height: 250px;
 }

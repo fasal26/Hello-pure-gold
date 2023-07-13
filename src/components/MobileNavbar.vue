@@ -14,7 +14,8 @@
                             class="pointer" :style="$route.name && $route.name.includes('About') ? 'background-color: #c9a046;' : ''">About us</li>
                         <li @click.self="handleRoute('/aml-policy')" 
                             class="pointer" :style="$route.name && $route.name.includes('AML') ? 'background-color: #c9a046;' : ''">AML Policy</li>
-                        <li class="pointer">Chairman's Message</li>
+                        <li @click.self="handleRoute('/chairman-message')" 
+                            class="pointer" :style="$route.name && $route.name.includes('chairman') ? 'background-color: #c9a046;' : ''">Chairman's Message</li>
                     </ul>
                 </div>
                 <div class="dialog-items doc-flex" @click="hndlDrpDwn('srvcFlg')">
@@ -24,18 +25,29 @@
                 </div>
                 <div class="drp-dwn-container" v-if="srvcFlg">
                     <ul>
-                        <li @click.self="handleRoute('/services')"  class="pointer">Protected Deliveries Worldwide</li>
-                        <li @click.self="handleRoute('/services')"  class="pointer">Metals Trading & Risk Management</li>
-                        <li @click.self="handleRoute('/services')" class="pointer">Precious Metal Financing</li>
-                        <li @click.self="handleRoute('/services')" class="pointer">Assaying</li>
-                        <li @click.self="handleRoute('/services')" class="pointer">Refining</li>
-                        <li @click.self="handleRoute('/services')" class="pointer">Location Swaps</li>
-                        <li @click.self="handleRoute('/services')" class="pointer">Secure Storage and Warehousing</li>
+                        <li @click.self="handleRoute('/services/ser1')"  class="pointer">Protected Deliveries Worldwide</li>
+                        <li @click.self="handleRoute('/services/ser2')"  class="pointer">Metals Trading & Risk Management</li>
+                        <li @click.self="handleRoute('/services/ser3')" class="pointer">Precious Metal Financing</li>
+                        <li @click.self="handleRoute('/services/ser4')" class="pointer">Assaying</li>
+                        <li @click.self="handleRoute('/services/ser5')" class="pointer">Refining</li>
+                        <li @click.self="handleRoute('/services/ser6')" class="pointer">Location Swaps</li>
+                        <li @click.self="handleRoute('/services/ser7')" class="pointer">Secure Storage and Warehousing</li>
                     </ul>
                 </div>
-                <div class="dialog-items doc-flex" @click="handleRoute('/services')">
-                    <!-- <img src="../Assets/blog.svg" alt=""> -->
+                <div class="dialog-items doc-flex" @click="hndlDrpDwn('EsrvcFlg')">
+                    <!-- <img src="../Assets/about.svg" alt=""> -->
                     <p>E-services</p>
+                    <img src="../Assets/down-arrow-wh.png" alt="">
+                </div>
+                <div class="drp-dwn-container" v-if="EsrvcFlg">
+                    <ul>
+                        <li @click.self="handleWindow('https://www.forexfactory.com/calendar')" class="pointer">Economic Calendar</li>
+                        <li @click.self="handleWindow('https://www.forexfactory.com/news')" class="pointer">News</li>
+                    </ul>
+                </div>
+                <div class="dialog-items doc-flex" @click="handleRoute('/products')">
+                    <!-- <img src="../Assets/blog.svg" alt=""> -->
+                    <p>Products</p>
                     <!-- <img src="../Assets/down-arrow.png" alt="" style="width: 30px;height: 30px;position: relative;bottom: 3px;"> -->
                 </div>
                 <div class="dialog-items doc-flex" @click="handleRoute('/why-us')">
@@ -76,23 +88,36 @@ onClickOutside(target, (event) => {
 // }
 let isHome = ref(false)
 let srvcFlg = ref(false)
+let EsrvcFlg = ref(false)
 function hndlDrpDwn(flg){
-    // isHome.value = false
-    // srvcFlg.value = false
     if(flg == 'isHome'){
         isHome.value = !isHome.value
         srvcFlg.value = false
+        EsrvcFlg.value = false
     }
     if(flg == 'srvcFlg'){
         srvcFlg.value = !srvcFlg.value 
         isHome.value = false
+        EsrvcFlg.value = false
+    }
+    if(flg == 'EsrvcFlg'){
+        EsrvcFlg.value = !EsrvcFlg.value 
+        isHome.value = false
+        srvcFlg.value = false
     }
 }
 function handleRoute(path){
+    console.log(path,'path');
     router.push(path)
     let displayFlg = document.getElementById('dlg')
         displayFlg.style.display = 'none'
         document.body.style.overflow = 'auto'
+}
+function handleWindow(path){
+    isHome.value = false
+    srvcFlg.value = false
+    EsrvcFlg.value = false
+    window.open(path)
 }
 function scrollInto(id){
     let displayFlg = document.getElementById('dlg')

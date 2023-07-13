@@ -2,9 +2,9 @@
     <div class="doc-banner-container" id="doc-banner">
             <!-- <img src="../Assets/WhatsApp Image 2023-06-06 at 14.10.30.jpg" alt=""> -->
         <div class="docdet-mob doc-padding" @click="openMenu">
-            <img src="../Assets/bars-staggered.png" alt="menu" class="navbar_menu" id="burger">
+            <img src="../Assets/menublack.png" alt="menu" class="navbar_menu" id="burger">
         </div>
-        <img src="../Assets/HPGTrans.png" alt="" class="logo pointer" @click="handleRoute('/')">
+        <img src="../Assets/Hellopure.png" alt="" class="logo pointer" @click="handleRoute('/')">
         <div class="doc-flex nav-container">
             <div class="nav-itm-container">
                 <p class="pointer underline-anim"
@@ -16,7 +16,8 @@
                             class="pointer" :style="$route.name && $route.name.includes('About') ? 'background-color: #c9a046;' : ''">About us</li>
                         <li @click.self="handleRoute('/aml-policy')" 
                             class="pointer" :style="$route.name && $route.name.includes('AML') ? 'background-color: #c9a046;' : ''">AML Policy</li>
-                        <li class="pointer">Chairman's Message</li>
+                        <li  @click.self="handleRoute('/chairman-message')" 
+                            class="pointer" :style="$route.name && $route.name.includes('chairman') ? 'background-color: #c9a046;' : ''">Chairman's Message</li>
                     </ul>
                 </div>
             </div>
@@ -26,18 +27,29 @@
                 <img src="../Assets/down-arrow-wh.png" alt="">
                 <div class="drp-dwn-container" v-if="srvcFlg">
                     <ul>
-                        <li @click.self="handleRoute('/services')"  class="pointer">Protected Deliveries Worldwide</li>
-                        <li @click.self="handleRoute('/services')"  class="pointer">Metals Trading & Risk Management</li>
-                        <li @click.self="handleRoute('/services')" class="pointer">Precious Metal Financing</li>
-                        <li @click.self="handleRoute('/services')" class="pointer">Assaying</li>
-                        <li @click.self="handleRoute('/services')" class="pointer">Refining</li>
-                        <li @click.self="handleRoute('/services')" class="pointer">Location Swaps</li>
-                        <li @click.self="handleRoute('/services')" class="pointer">Secure Storage and Warehousing</li>
+                        <li @click.self="handleRoute('/services/ser1')"  class="pointer">Protected Deliveries Worldwide</li>
+                        <li @click.self="handleRoute('/services/ser2')"  class="pointer">Metals Trading & Risk Management</li>
+                        <li @click.self="handleRoute('/services/ser3')" class="pointer">Precious Metal Financing</li>
+                        <li @click.self="handleRoute('/services/ser4')" class="pointer">Assaying</li>
+                        <li @click.self="handleRoute('/services/ser5')" class="pointer">Refining</li>
+                        <li @click.self="handleRoute('/services/ser6')" class="pointer">Location Swaps</li>
+                        <li @click.self="handleRoute('/services/ser7')" class="pointer">Secure Storage and Warehousing</li>
                     </ul>
                 </div>
             </div>
-            <p class="pointer underline-anim" @click="scrollInto('footer')" 
-                >E-services</p>
+            <div class="nav-itm-container">
+                <p class="pointer underline-anim" @click="hndlDrpDwn('EsrvcFlg')"
+                    >E-services</p>
+                <img src="../Assets/down-arrow-wh.png" alt="">
+                <div class="drp-dwn-container" v-if="EsrvcFlg">
+                    <ul>
+                        <li @click.self="handleWindow('https://www.forexfactory.com/calendar')" class="pointer">Economic Calendar</li>
+                        <li @click.self="handleWindow('https://www.forexfactory.com/news')" class="pointer">News</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="pointer underline-anim" @click.self="handleRoute('/products')"
+                >Products</p>
             <p class="pointer underline-anim" :class="$route.name && $route.name.includes('why us') ? 'route-active' : ''" @click="handleRoute('/why-us')" 
                 >Why Us</p>
             <p class="pointer underline-anim" @click="scrollInto('footer')" 
@@ -57,6 +69,7 @@ const router = useRouter()
 let isMounted = ref(false)
 let isHome = ref(false)
 let srvcFlg = ref(false)
+let EsrvcFlg = ref(false)
 onMounted(() => {
     // isMounted.value = true
 })
@@ -69,17 +82,16 @@ function openMenu(evt){
         document.body.style.overflow = 'hidden'
     }
 }
-// function getColor(){
-//     if(route.path != '/'){
-//         return 'color:initial;'
-//     }else{
-//         'color:var(--color-bg);'
-//     }
-// }
 function handleRoute(path, flg){
     isHome.value = false
     srvcFlg.value = false
     router.push(path)
+}
+function handleWindow(path){
+    isHome.value = false
+    srvcFlg.value = false
+    EsrvcFlg.value = false
+    window.open(path)
 }
 function hndlDrpDwn(flg){
     // isHome.value = false
@@ -87,10 +99,17 @@ function hndlDrpDwn(flg){
     if(flg == 'isHome'){
         isHome.value = !isHome.value
         srvcFlg.value = false
+        EsrvcFlg.value = false
     }
     if(flg == 'srvcFlg'){
         srvcFlg.value = !srvcFlg.value 
         isHome.value = false
+        EsrvcFlg.value = false
+    }
+    if(flg == 'EsrvcFlg'){
+        EsrvcFlg.value = !EsrvcFlg.value 
+        isHome.value = false
+        srvcFlg.value = false
     }
 }
 function scrollInto(id){
