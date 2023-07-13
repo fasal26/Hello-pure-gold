@@ -50,12 +50,14 @@
             </div>
             <p class="pointer underline-anim" @click.self="handleRoute('/products')"
                 >Products</p>
-            <p class="pointer underline-anim" :class="$route.name && $route.name.includes('why us') ? 'route-active' : ''" @click="handleRoute('/why-us')" 
+            <p class="pointer underline-anim" :class="$route.name && $route.name.includes('why') ? 'route-active' : ''" @click="handleRoute('/why-us')" 
                 >Why Us</p>
+            <p class="pointer underline-anim" @click="handleRoute('/auth')" 
+                >Login</p>
+            <p class="pointer underline-anim" @click="handleWindow('https://hellopuregold.bullionview.com/web')" 
+                >Live rate</p>
             <p class="pointer underline-anim" @click="scrollInto('footer')" 
                 >Contact Us</p>
-            <p class="pointer underline-anim" @click="handleRoute('/auth')" 
-                >Login / Signup</p>
         </div>
     </div>
     <MobileNavbar/>

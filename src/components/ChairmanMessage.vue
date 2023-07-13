@@ -1,7 +1,8 @@
 <template>
-  <div class="pt-150 pb-150 doc-padding">
+  <div class=" doc-padding" style="padding-top: 50px;padding-bottom: 50px;">
     <!-- <img src="../Assets/scottsdale-mint2.jpg" alt="" class="abtus-rt" /> -->
     <div>
+      <h1 class="pb-50" style="text-align: center;">Chairman's Message</h1>
       <p>
         Welcome to <strong>Hello Pure Gold</strong> Bullion Company! As the CEO of Pure
         Gold, I, <strong>Anowar Hossain</strong>, extend a warm welcome to all our valued

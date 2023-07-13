@@ -1,6 +1,6 @@
 <template>
-  <div class="baba-flex baba-abtus" :class="$route.path == '/about' ? 'pt-150' : ''">
-    <img src="../Assets/scottsdale-mint2.jpg" alt="" class="abtus-rt" />
+  <div class="baba-flex baba-abtus" :style="$route.path == '/about' ? 'padding-top:50px' : ''">
+    <img src="../Assets/aboutUs.jpg" alt="" class="abtus-rt" />
     <div class="baba-flex-col abt-cntnt">
       <h2>About Us</h2>
       <p>
@@ -47,6 +47,39 @@
       Thank you for choosing Hello Pure Gold. We eagerly anticipate the opportunity to serve you and become your
       trusted partner in bullion and precious metal 
     </p>
+  </div>
+  <div class="baba-ourvision-conatiner">
+    <div class="baba-flex baba-vision">
+      <!-- <img src="../Assets/scottsdale-mint2.jpg" alt=""> -->
+      <div class="baba-flex-col abt-cntnt">
+        <h2>Our Vision</h2>
+        <p>
+          At Hello Pure Gold, our vision is to transform the bullion industry by providing
+          accessible, transparent, and innovative solutions for investors worldwide
+        </p>
+        <p>
+          We are committed to offering high-quality bullion products that meet the highest
+          standards of authenticity and purity. Our goal is to revolutionize the way
+          people perceive and engage with gold investments, making them more accessible
+          and convenient for everyone.
+        </p>
+        <span class="pointer read-more" @click="handleRoute('/about')">read more</span>
+      </div>
+      <div class="baba-flex-col abt-cntnt">
+        <h2>Our Mission</h2>
+        <p>
+          At Hello Pure Gold, our mission is to provide a seamless and rewarding
+          experience for individuals looking to invest in precious metals
+        </p>
+        <p>
+          We are dedicated to offering a wide range of authentic bullion products and
+          comprehensive services that cater to the unique needs of our customers. Through
+          our commitment to integrity, transparency, and exceptional customer service, we
+          aim to build lasting relationships based on trust and mutual success.
+        </p>
+        <span class="pointer read-more" @click="handleRoute('/about')">read more</span>
+      </div>
+    </div>
   </div>
 </template>
 

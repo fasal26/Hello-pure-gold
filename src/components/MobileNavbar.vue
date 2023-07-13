@@ -57,6 +57,11 @@
                 </div>
                 <div class="dialog-items doc-flex" @click="scrollInto('footer')">
                     <!-- <img src="../Assets/contact-mail.svg" alt=""> -->
+                    <p>Login</p>
+                    <!-- <img src="../Assets/down-arrow.png" alt="" style="width: 30px;height: 30px;position: relative;bottom: 3px;"> -->
+                </div>
+                <div class="dialog-items doc-flex" @click="scrollInto('footer')">
+                    <!-- <img src="../Assets/contact-mail.svg" alt=""> -->
                     <p>Contact Us</p>
                     <!-- <img src="../Assets/down-arrow.png" alt="" style="width: 30px;height: 30px;position: relative;bottom: 3px;"> -->
                 </div>
