@@ -6,8 +6,12 @@
         </div>
         <img src="../Assets/Hellopure.png" alt="" class="logo pointer" @click="handleRoute('/')">
         <div class="doc-flex nav-container">
-            <div class="nav-itm-container">
+            <div class="nav-itm-container" @mouseover="handleMouse('mouseover','company')" @mouseleave="handleMouse('mouseleave','company')">
                 <p class="pointer underline-anim"
+                    :class="$route.name && ($route.name.includes('About') ||
+                            $route.name.includes('AML') || 
+                            $route.name.includes('chairman')) ?
+                            'route-active' : ''"
                     @click="hndlDrpDwn('isHome')">Our Company</p>
                     <img src="../Assets/down-arrow-wh.png" alt="">
                 <div class="drp-dwn-container" v-if="isHome">
@@ -21,8 +25,10 @@
                     </ul>
                 </div>
             </div>
-            <div class="nav-itm-container">
-                <p class="pointer underline-anim" @click="hndlDrpDwn('srvcFlg')"
+            <div class="nav-itm-container" @mouseover="handleMouse('mouseover','service')" @mouseleave="handleMouse('mouseleave','service')">
+                <p class="pointer underline-anim" 
+                    :class="$route.name && $route.name.includes('Services') ? 'route-active' : ''"
+                    @click="hndlDrpDwn('srvcFlg')"
                     >Services</p>
                 <img src="../Assets/down-arrow-wh.png" alt="">
                 <div class="drp-dwn-container" v-if="srvcFlg">
@@ -37,7 +43,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="nav-itm-container">
+            <div class="nav-itm-container" @mouseover="handleMouse('mouseover','eservice')" @mouseleave="handleMouse('mouseleave','eservice')">
                 <p class="pointer underline-anim" @click="hndlDrpDwn('EsrvcFlg')"
                     >E-services</p>
                 <img src="../Assets/down-arrow-wh.png" alt="">
@@ -48,11 +54,13 @@
                     </ul>
                 </div>
             </div>
-            <p class="pointer underline-anim" @click.self="handleRoute('/products')"
+            <p class="pointer underline-anim" 
+                :class="$route.name && $route.name.includes('products') ? 'route-active' : ''"
+                @click.self="handleRoute('/products')"
                 >Products</p>
-            <p class="pointer underline-anim" :class="$route.name && $route.name.includes('why') ? 'route-active' : ''" @click="handleRoute('/why-us')" 
+            <p class="pointer underline-anim" :class="$route.name && $route.name.includes('Why us') ? 'route-active' : ''" @click="handleRoute('/why-us')" 
                 >Why Us</p>
-            <p class="pointer underline-anim" @click="handleRoute('/auth')" 
+            <p class="pointer underline-anim" :class="$route.name && $route.name.includes('authentication') ? 'route-active' : ''" @click="handleRoute('/auth')" 
                 >Login</p>
             <p class="pointer underline-anim" @click="handleWindow('https://hellopuregold.bullionview.com/web')" 
                 >Live rate</p>
@@ -84,6 +92,22 @@ function openMenu(evt){
     if(evt.target == menu){
         displayFlg.style.display = 'block'
         document.body.style.overflow = 'hidden'
+    }
+}
+function handleMouse(type,val){
+    switch (val) {
+        case 'company':
+            isHome.value = type == 'mouseover' ? true : false
+            break;
+        case 'service':
+            srvcFlg.value = type == 'mouseover' ? true : false
+            break;
+        case 'eservice':
+            EsrvcFlg.value = type == 'mouseover' ? true : false
+            break;
+    
+        default:
+            break;
     }
 }
 function handleRoute(path, flg){
