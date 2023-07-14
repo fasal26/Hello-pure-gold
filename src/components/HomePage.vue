@@ -1,7 +1,7 @@
 <template>
   <div class="banner-container">
     <!-- <h1>Unlock the Power of Gold with <strong>Hello Pure Gold</strong></h1> -->
-    <video
+    <!-- <video
       src="../Assets/HELLOPUREGOLD.mp4"
       width="100%"
       height="550px"
@@ -10,7 +10,8 @@
       muted
       playsinline
       style="object-fit: fill; width: 100%; height: 600px"
-    ></video>
+    ></video> -->
+    <img src="../Assets/banner.jpg" alt="" style="width:100%;height:550px;object-fit:cover;">
   </div>
   <div class="baba-abtus-conatiner">
     <div class="baba-flex baba-abtus">
