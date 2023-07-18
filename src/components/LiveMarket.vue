@@ -1,5 +1,5 @@
 <template>
-    <div class="tradingview-widget-container">
+    <div class="tradingview-widget-container" style="height: 825px;">
     <h1>Live Market Watch</h1>
         <div class="tradingview-widget-container__widget"></div>
             <div class="tradingview-widget-copyright">

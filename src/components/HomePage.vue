@@ -12,23 +12,9 @@
       style="object-fit: fill; width: 100%; height: 600px"
     ></video> -->
     <img src="../Assets/bannernew.jpg" alt="" style="width:100%;height:550px;object-fit:cover;">
-    <h1
-      v-motion
-      :initial="{ opacity: 0, y: 100 }"
-      :enter="{ opacity: 1, y: 0,transition: {
-        duration: 800,
-        type: 'keyframes',
-        ease: 'linear',
-      }}"
-      :delay="500" 
-    >Welcome to Hello Pure Gold</h1>
+    <h1 data-aos="fade" data-aos-duration="3000">Welcome to Hello Pure Gold</h1>
   </div>
-  <div class="baba-abtus-conatiner" 
-      v-motion
-      :initial="{ opacity: 0, y: 100 }"
-      :enter="{ opacity: 1, y: 0}"
-      :delay="500"
-      >
+  <div class="baba-abtus-conatiner" data-aos="fade-up">
     <div class="baba-flex baba-abtus" >
       <img src="../Assets/Aboutus.jpg" alt=""/>
       <div class="baba-flex-col abt-cntnt">
@@ -48,15 +34,10 @@
       </div>
     </div>
   </div>
-  <div class="baba-flex-col baba-svc-container" id="services"
-      v-motion
-      :initial="{ opacity: 0, y: 100 }"
-      :visibleOnce="{ opacity: 1, y: 0}"
-      :delay="500" 
-      >
+  <div class="baba-flex-col baba-svc-container" id="services" data-aos="fade-up">
     <h2 class="baba-flex">Services</h2>
     <div class="baba-flex cards-container">
-      <div class="baba-flex card">
+      <div class="baba-flex card" data-aos="flip-left">
         <!-- <img src="../Assets/gold.png" alt=""> -->
         <div class="svc-cntnt">
           <h4>Protected Deliveries Worldwide</h4>
@@ -72,7 +53,7 @@
             >
         </div>
       </div>
-      <div class="baba-flex card">
+      <div class="baba-flex card" data-aos="flip-left">
         <!-- <img src="../Assets/gold.png" alt=""> -->
         <div class="svc-cntnt">
           <h4>Metals Trading & Risk Management</h4>
@@ -89,7 +70,7 @@
             >
         </div>
       </div>
-      <div class="baba-flex card">
+      <div class="baba-flex card" data-aos="flip-left">
         <!-- <img src="../Assets/gold.png" alt=""> -->
         <div class="svc-cntnt">
           <h4>Precious Metal Financing</h4>
@@ -106,7 +87,7 @@
             >
         </div>
       </div>
-      <div class="baba-flex card">
+      <div class="baba-flex card" data-aos="flip-left">
         <!-- <img src="../Assets/gold.png" alt=""> -->
         <div class="svc-cntnt">
           <h4>Assaying</h4>
@@ -123,7 +104,7 @@
             >
         </div>
       </div>
-      <div class="baba-flex card">
+      <div class="baba-flex card" data-aos="flip-left">
         <!-- <img src="../Assets/gold.png" alt=""> -->
         <div class="svc-cntnt">
           <h4>Refining</h4>
@@ -140,7 +121,7 @@
             >
         </div>
       </div>
-      <div class="baba-flex card">
+      <div class="baba-flex card" data-aos="flip-left">
         <!-- <img src="../Assets/gold.png" alt=""> -->
         <div class="svc-cntnt">
           <h4>Location Swaps</h4>
@@ -172,11 +153,7 @@
     </div>
   </div>
   <LiveMarket />
-  <div class="baba-ourvision-conatiner"
-      v-motion
-      :initial="{ opacity: 0, y: 100 }"
-      :visibleOnce="{ opacity: 1, y: 0}"
-      :delay="500" >
+  <div class="baba-ourvision-conatiner"  data-aos="fade-up">
     <div class="baba-flex baba-vision">
       <!-- <img src="../Assets/scottsdale-mint2.jpg" alt=""> -->
       <div class="baba-flex-col abt-cntnt">
@@ -209,13 +186,9 @@
       </div>
     </div>
   </div>
-  <div class="baba-flex-col desc-container">
+  <div class="baba-flex-col desc-container"  data-aos="fade-up">
     <h2 class="baba-flex">Top reasons to do business with us</h2>
-    <div class="top-rsn"
-      v-motion
-      :initial="{ opacity: 0, y: 100 }"
-      :visibleOnce="{ opacity: 1, y: 0}"
-      :delay="500" >
+    <div class="top-rsn">
       <ul class="baba-flex">
         <li class="baba-flex">
           <img src="../Assets/001-correct.png" alt="" id="correct" />Risk Management
