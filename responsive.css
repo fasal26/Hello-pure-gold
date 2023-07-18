@@ -22,9 +22,13 @@
     }
 
     .banner-container > h1 {
-        top: 20%;
-        font-size: 48px;
+        top: 17%;
+        font-size: 35px;
         max-width: 65%;
+    }
+
+    .banner-container > img {
+        max-height: 400px;
     }
 
     .doc-banner-container > video {
