@@ -118,7 +118,9 @@ const route = useRoute()
 // const slctSrvc = servcArr.value.find(_ => _.id == route.params.id)
 // if(slctSrvc) selectSer.value = slctSrvc
 onMounted(() => {
-    scrollInto(route.params.id)
+    let id = route.params.id
+    if(id != 'ser1' && id != 'ser2')
+        scrollInto(id)
 })
 function scrollInto(id){
     if(id){

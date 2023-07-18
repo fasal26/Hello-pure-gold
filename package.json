@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@vueuse/core": "^10.2.0",
+    "@vueuse/motion": "^2.0.0",
     "vue": "^3.2.25",
     "vue-router": "^4.2.2"
   },

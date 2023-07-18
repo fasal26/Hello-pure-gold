@@ -11,11 +11,26 @@
       playsinline
       style="object-fit: fill; width: 100%; height: 600px"
     ></video> -->
-    <img src="../Assets/banner.jpg" alt="" style="width:100%;height:550px;object-fit:cover;">
+    <img src="../Assets/bannernew.jpg" alt="" style="width:100%;height:550px;object-fit:cover;">
+    <h1
+      v-motion
+      :initial="{ opacity: 0, y: 100 }"
+      :enter="{ opacity: 1, y: 0,transition: {
+        duration: 800,
+        type: 'keyframes',
+        ease: 'linear',
+      }}"
+      :delay="500" 
+    >Welcome to Hello Pure Gold</h1>
   </div>
-  <div class="baba-abtus-conatiner">
-    <div class="baba-flex baba-abtus">
-      <img src="../Assets/Aboutus.jpg" alt="" />
+  <div class="baba-abtus-conatiner" 
+      v-motion
+      :initial="{ opacity: 0, y: 100 }"
+      :enter="{ opacity: 1, y: 0}"
+      :delay="500"
+      >
+    <div class="baba-flex baba-abtus" >
+      <img src="../Assets/Aboutus.jpg" alt=""/>
       <div class="baba-flex-col abt-cntnt">
         <h2>About Us</h2>
         <p>
@@ -33,7 +48,12 @@
       </div>
     </div>
   </div>
-  <div class="baba-flex-col baba-svc-container" id="services">
+  <div class="baba-flex-col baba-svc-container" id="services"
+      v-motion
+      :initial="{ opacity: 0, y: 100 }"
+      :visibleOnce="{ opacity: 1, y: 0}"
+      :delay="500" 
+      >
     <h2 class="baba-flex">Services</h2>
     <div class="baba-flex cards-container">
       <div class="baba-flex card">
@@ -152,7 +172,11 @@
     </div>
   </div>
   <LiveMarket />
-  <div class="baba-ourvision-conatiner">
+  <div class="baba-ourvision-conatiner"
+      v-motion
+      :initial="{ opacity: 0, y: 100 }"
+      :visibleOnce="{ opacity: 1, y: 0}"
+      :delay="500" >
     <div class="baba-flex baba-vision">
       <!-- <img src="../Assets/scottsdale-mint2.jpg" alt=""> -->
       <div class="baba-flex-col abt-cntnt">
@@ -187,7 +211,11 @@
   </div>
   <div class="baba-flex-col desc-container">
     <h2 class="baba-flex">Top reasons to do business with us</h2>
-    <div class="top-rsn">
+    <div class="top-rsn"
+      v-motion
+      :initial="{ opacity: 0, y: 100 }"
+      :visibleOnce="{ opacity: 1, y: 0}"
+      :delay="500" >
       <ul class="baba-flex">
         <li class="baba-flex">
           <img src="../Assets/001-correct.png" alt="" id="correct" />Risk Management
