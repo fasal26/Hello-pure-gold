@@ -69,3 +69,21 @@ th {
 .funding-wrap > .company > h3 > dfn{
     color: #da9e16;
 }
+
+.crypto-wllt{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.currency{
+    flex-basis: 35%;
+}
+
+.currency > img{
+    width: 100%;
+    object-fit: fill;
+}
+
+.currency > h3{
+    padding-bottom: 25px;
+}
