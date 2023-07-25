@@ -11,12 +11,13 @@
       playsinline
       style="object-fit: fill; width: 100%; height: 600px"
     ></video> -->
-    <img src="../Assets/bannernew.jpg" alt="" style="width:100%;height:550px;object-fit:cover;">
+    <img src="../Assets/bannernew.jpg" alt="" style="width:100%;height:550px;object-fit:cover;" data-aos="zoom-in" data-aos-duration="3000">
     <h1 data-aos="fade" data-aos-duration="3000">Welcome to Hello Pure Gold</h1>
   </div>
   <div class="baba-abtus-conatiner" data-aos="fade-up">
     <div class="baba-flex baba-abtus" >
-      <img src="../Assets/Aboutus.jpg" alt=""/>
+      <!-- <img src="../Assets/Aboutus.jpg" alt=""/> -->
+      <div id="player" style="border-radius: 10px;width: 100%;"></div>
       <div class="baba-flex-col abt-cntnt">
         <h2>About Us</h2>
         <p>
@@ -242,6 +243,13 @@ const router = useRouter();
 
 onMounted(() => {
   carousel("prd-img-id");
+  new YT.Player('player', {
+      videoId: 'qj8YRilwzX0', // Replace with the YouTube video ID you want to autoplay
+      playerVars: {
+        autoplay: 1, // Enable autoplay
+        mute: 1,
+      },
+    });
 });
 
 function handleRoute(path) {

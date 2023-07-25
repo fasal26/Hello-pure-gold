@@ -1,6 +1,9 @@
 <template>
+    <div class="sub-head">
+        <h1>{{ $route.name }}</h1>
+        <span class="overlay-el"></span>
+    </div>
     <div class="baba-flex-col baba-svc-container" id="services">
-      <h2 class="baba-flex">Products</h2>
       <div class="baba-prd-cntnr">
         <div class="product-img">
           <img src="../Assets/KILOBAR99.9.jpg" alt="">

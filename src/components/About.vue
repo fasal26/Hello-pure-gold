@@ -1,6 +1,13 @@
 <template>
   <div class="baba-flex baba-abtus" :style="$route.path == '/about' ? 'padding-top:50px' : ''">
-    <img src="../Assets/aboutUs.jpg" alt="" class="abtus-rt" />
+    <!-- <img src="../Assets/aboutUs.jpg" alt="" class="abtus-rt" /> -->
+    <!-- <iframe 
+      width="100%"
+      height="100%"
+      src=" https://www.youtube.com/embed/qj8YRilwzX0?autoplay=1"
+      loading="lazy" >
+    </iframe> -->
+    <div id="player" style="border-radius: 10px;width: 100%;"></div>
     <div class="baba-flex-col abt-cntnt">
       <h2>About Us</h2>
       <p>
@@ -88,6 +95,13 @@ import { onMounted } from "vue";
 
 onMounted(() => {
   let element = document.getElementById("app");
+  new YT.Player('player', {
+      videoId: 'qj8YRilwzX0', // Replace with the YouTube video ID you want to autoplay
+      playerVars: {
+        autoplay: 1, // Enable autoplay
+        mute: 1,
+      },
+    });
   element.scrollIntoView({
     behavior: "smooth"
   })

@@ -55,14 +55,11 @@
 
 .news-letter{
     gap: 10px;
+    max-width: 30%;
 }
 
 .news-letter > p{
     color: #26A9E0;
-}
-
-.news-letter-items{
-    gap: 23px;
 }
 
 .news-letter-items > p{

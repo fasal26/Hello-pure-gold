@@ -134,6 +134,10 @@
         justify-content: space-between;
     }
 
+    .news-letter {
+        max-width: initial;
+    }
+
     .news-letter-items {
         gap: 0;
         justify-content: space-between;
@@ -208,6 +212,10 @@
     
     .tradingview-widget-container{
         padding: 20px
+    }
+
+    .tradingview-widget-container-slide{
+        display: none;
     }
 
     .baba-ourvision-conatiner {

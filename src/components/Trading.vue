@@ -1,6 +1,9 @@
 <template>
+    <div class="sub-head">
+        <h1>{{ $route.name }}</h1>
+        <span class="overlay-el"></span>
+    </div>
     <div class="trading-container">
-        <h1> Anti-Money Laundering (AML) Policy</h1>
         <!-- <h3 class="baba-flex">Baba Gold Trading Procedure</h3> -->
         <div class="baba-flex pltfm-list">
             <!-- <strong>Step 1 :</strong> -->
@@ -106,7 +109,7 @@
                 <p>
                     Review and Update This AML Policy will be reviewed and updated periodically to reflect changes in
                     regulatory requirements, industry best practices, and the evolving nature of money laundering and
-                    terrorism financing ris
+                    terrorism financing
                 </p>
             </div>
             <!-- <h3 class="baba-flex">Trading Tips for Successful Gold Investors</h3>

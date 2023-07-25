@@ -11,18 +11,16 @@
                     <li class="pointer" @click="$router.push('/aml-policy')">AML Policy</li>
                 </ul>
             </div>
-        </div>
-        <div class="footer-items2-container">
             <div class="news-letter baba-flex-col">
                 <!-- <strong>newsletter</strong> -->
                 <p>Contact details</p>
-                <div class="news-letter-items baba-flex">
+                <div class="news-letter-items baba-flex-col">
                     <p>+97143490037</p>
                     <p>anowar.48@gmail.com </p>
                 </div>
                 <p>Address</p>
                 <div class="news-letter-items baba-flex">
-                    <p>Office # 168, Level # 6, Gold Center Building Deira Gold Souk - Dubai,United Arab Emirates, Sylla Gold Trading branch</p>
+                    <p>Office # 168, Level # 6, Gold Center Building Deira Gold Souk - Dubai, United Arab Emirates</p>
                 </div>
                 <!-- <div class="email">
                     <input type="text" class="mail-input">

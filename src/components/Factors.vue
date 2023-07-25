@@ -1,6 +1,10 @@
 <template>
+    <div class="sub-head">
+        <h1>{{ $route.name }}?</h1>
+        <span class="overlay-el"></span>
+    </div>
     <div class="platfm-container">
-        <h1>Why Choose Hello Pure Gold?</h1>
+        <!-- <h1>Why Choose Hello Pure Gold?</h1> -->
         <p>
             Choosing to do business with Hello Pure Gold means partnering with a company that offers trust, quality, expertise, comprehensive services, compliance, personalized experiences, secure operations, and social responsibility. We strive to
             exceed customer expectations and provide a seamless and rewarding experience in bullion and precious metal trading.

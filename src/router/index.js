@@ -20,6 +20,8 @@ const Factors = () => import("../components/Factors.vue")
 const ChairmanMessage = () => import("../components/ChairmanMessage.vue")
 const ProductImages = () => import("../components/ProductImages.vue")
 const Auth = () => import("../components/Auth.vue")
+const AccountOpening = () => import("../components/AccountOpening.vue")
+const AccountFunding = () => import("../components/AccountFunding.vue")
 export function createRouter() {
     const router =  _createRouter({
         history: createWebHistory('/Hello-pure-gold/'),
@@ -30,12 +32,14 @@ export function createRouter() {
             { path: "/our-vision", name: 'Our Vision', component: Story },
             { path: "/our-mission", name: 'Our Mission', component: Mission },
             { path: "/services/:id", name: 'Services', component: Services },
-            { path: "/aml-policy", name: 'AML Policy', component: Trading },
+            { path: "/aml-policy", name: 'Anti-Money Laundering (AML) Policy', component: Trading },
             { path: "/decision-making", name: 'DecisionMaking', component: DecisionMaking },
             { path: "/platform", name: 'Platform', component: Platform },
-            { path: "/why-us", name: 'Why us', component: Factors },
-            { path: "/chairman-message", name: 'chairman message', component: ChairmanMessage },
-            { path: "/products", name: 'products', component: ProductImages },
+            { path: "/why-us", name: 'Why Choose Hello Pure Gold', component: Factors },
+            { path: "/chairman-message", name: "Chairman's message", component: ChairmanMessage },
+            { path: "/products", name: 'Products', component: ProductImages },
+            { path: "/account-opening-form", name: 'Account opening forum', component: AccountOpening },
+            { path: "/account-funding", name: 'Account funding', component: AccountFunding },
             { path: "/auth", name: 'authentication', component: Auth },
             // { path: '/:pathMatch(.*)*', redirect: "/" },
         ],

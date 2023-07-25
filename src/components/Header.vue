@@ -1,4 +1,5 @@
 <template>
+    <LiveRateSlide/>
     <div class="doc-banner-container" id="doc-banner">
             <!-- <img src="../Assets/WhatsApp Image 2023-06-06 at 14.10.30.jpg" alt=""> -->
         <div class="docdet-mob doc-padding" @click="openMenu">
@@ -58,8 +59,31 @@
                 :class="$route.name && $route.name.includes('products') ? 'route-active' : ''"
                 @click.self="handleRoute('/products')"
                 >Products</p>
-            <p class="pointer underline-anim" :class="$route.name && $route.name.includes('Why us') ? 'route-active' : ''" @click="handleRoute('/why-us')" 
-                >Why Us</p>
+            <div class="nav-itm-container" @mouseover="handleMouse('mouseover','myacnt')" @mouseleave="handleMouse('mouseleave','myacnt')">
+                <p class="pointer underline-anim" @click="hndlDrpDwn('myAcnt')"
+                    :class="$route.name && $route.name.includes('account') ? 'route-active' : ''"
+                    >My account</p>
+                <img src="../Assets/down-arrow-wh.png" alt="">
+                <div class="drp-dwn-container" v-if="myAcntFlg">
+                    <ul>
+                        <li @click.self="handleRoute('/account-opening-form')" class="pointer" :style="$route.name && $route.name.includes('Account opening forum') ? 'background-color: #c9a046;' : ''">Account opening forum</li>
+                        <li @click.self="handleRoute('/account-funding')" class="pointer" :style="$route.name && $route.name.includes('Account funding') ? 'background-color: #c9a046;' : ''">Account funding</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-itm-container" @mouseover="handleMouse('mouseover','whyus')" @mouseleave="handleMouse('mouseleave','whyus')">
+                <p class="pointer underline-anim" @click="hndlDrpDwn('whyUs')"
+                    :class="$route.name && $route.name.includes('Why') ? 'route-active' : ''"
+                    >Why Us</p>
+                <img src="../Assets/down-arrow-wh.png" alt="">
+                <div class="drp-dwn-container" v-if="whyUsFlg">
+                    <ul>
+                        <li @click.self="handleRoute('/why-us')" class="pointer" :style="$route.name && $route.name.includes('Why') ? 'background-color: #c9a046;' : ''">Why choose Hello Pure Gold</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- <p class="pointer underline-anim" :class="$route.name && $route.name.includes('Why us') ? 'route-active' : ''" @click="handleRoute('/why-us')" 
+                >Why Us</p> -->
             <p class="pointer underline-anim" :class="$route.name && $route.name.includes('authentication') ? 'route-active' : ''" @click="handleRoute('/auth')" 
                 >Login</p>
             <p class="pointer underline-anim" @click="handleWindow('https://hellopuregold.bullionview.com/web')" 
@@ -75,6 +99,7 @@
 import { useRoute, useRouter } from 'vue-router';
 import { ref, onMounted } from "vue"
 import MobileNavbar from './MobileNavbar.vue';
+import LiveRateSlide from "./LiveRateSlide.vue"
 const route = useRoute()
 const router = useRouter()
 
@@ -82,6 +107,8 @@ let isMounted = ref(false)
 let isHome = ref(false)
 let srvcFlg = ref(false)
 let EsrvcFlg = ref(false)
+let whyUsFlg = ref(false)
+let myAcntFlg = ref(false)
 onMounted(() => {
     // isMounted.value = true
 })
@@ -105,6 +132,12 @@ function handleMouse(type,val){
         case 'eservice':
             EsrvcFlg.value = type == 'mouseover' ? true : false
             break;
+        case 'whyus':
+            whyUsFlg.value = type == 'mouseover' ? true : false
+            break;
+        case 'myacnt':
+            myAcntFlg.value = type == 'mouseover' ? true : false
+            break;
     
         default:
             break;
@@ -113,12 +146,16 @@ function handleMouse(type,val){
 function handleRoute(path, flg){
     isHome.value = false
     srvcFlg.value = false
+    whyUsFlg.value = false
+    myAcntFlg.value = false
     router.push(path)
 }
 function handleWindow(path){
     isHome.value = false
     srvcFlg.value = false
     EsrvcFlg.value = false
+    whyUsFlg.value = false
+    myAcntFlg.value = false
     window.open(path)
 }
 function hndlDrpDwn(flg){
@@ -128,16 +165,36 @@ function hndlDrpDwn(flg){
         isHome.value = !isHome.value
         srvcFlg.value = false
         EsrvcFlg.value = false
+        whyUsFlg.value = false
+        myAcntFlg.value = false
     }
     if(flg == 'srvcFlg'){
         srvcFlg.value = !srvcFlg.value 
         isHome.value = false
         EsrvcFlg.value = false
+        whyUsFlg.value = false
+        myAcntFlg.value = false
     }
     if(flg == 'EsrvcFlg'){
         EsrvcFlg.value = !EsrvcFlg.value 
         isHome.value = false
         srvcFlg.value = false
+        whyUsFlg.value = false
+        myAcntFlg.value = false
+    }
+    if(flg == 'whyUs'){
+        whyUsFlg.value = !whyUsFlg.value 
+        isHome.value = false
+        srvcFlg.value = false
+        EsrvcFlg.value = false
+        myAcntFlg.value = false
+    }
+    if(flg == 'myAcnt'){
+        myAcntFlg.value = !myAcntFlg.value 
+        isHome.value = false
+        srvcFlg.value = false
+        EsrvcFlg.value = false
+        whyUsFlg.value = false
     }
 }
 function scrollInto(id){

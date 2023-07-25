@@ -28,6 +28,7 @@
 
 .doc-banner-container{
   background-color: var(--color-bg);
+  position: relative;
 }
 
 .docinfo-container{
@@ -137,7 +138,7 @@
   position: absolute;
   width: 250px;
   top: 95px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .drp-dwn-container > ul{
@@ -171,6 +172,10 @@
 
 .underline-anim:hover:after{
   width: 100%;
+}
+
+.banner-container{
+  position: relative;
 }
 
 .banner-container > picture > img{

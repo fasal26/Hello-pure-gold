@@ -1,6 +1,9 @@
 <template>
+    <div class="sub-head">
+        <h1>{{ $route.name }}</h1>
+        <span class="overlay-el"></span>
+    </div>
     <div class="baba-flex-col baba-svc-container" id="services">
-      <h2 class="baba-flex">Services</h2>
       <div class="svc-gllry-container">
         <div class="svc-img" id="ser1">
             <figure>

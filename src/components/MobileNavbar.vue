@@ -50,10 +50,17 @@
                     <p>Products</p>
                     <!-- <img src="../Assets/down-arrow.png" alt="" style="width: 30px;height: 30px;position: relative;bottom: 3px;"> -->
                 </div>
-                <div class="dialog-items doc-flex" @click="handleRoute('/why-us')">
+                <div class="dialog-items doc-flex" @click="hndlDrpDwn('whyUsFlg')">
                     <!-- <img src="../Assets/blog.svg" alt=""> -->
                     <p>Why Us</p>
-                    <!-- <img src="../Assets/down-arrow.png" alt="" style="width: 30px;height: 30px;position: relative;bottom: 3px;"> -->
+                    <img src="../Assets/down-arrow-wh.png" alt="">
+                </div>
+                <div class="drp-dwn-container" v-if="whyUsFlg">
+                    <ul>
+                        <li @click.self="handleRoute('why-us')" 
+                            :style="$route.name && $route.name.includes('Why') ? 'background-color: #c9a046;' : ''"
+                            class="pointer">Why choose Hello Pure Gold</li>
+                    </ul>
                 </div>
                 <div class="dialog-items doc-flex" @click="scrollInto('footer')">
                     <!-- <img src="../Assets/contact-mail.svg" alt=""> -->
@@ -94,6 +101,7 @@ onClickOutside(target, (event) => {
 let isHome = ref(false)
 let srvcFlg = ref(false)
 let EsrvcFlg = ref(false)
+let whyUsFlg = ref(false)
 function hndlDrpDwn(flg){
     if(flg == 'isHome'){
         isHome.value = !isHome.value
@@ -110,6 +118,12 @@ function hndlDrpDwn(flg){
         isHome.value = false
         srvcFlg.value = false
     }
+    if(flg == 'whyUsFlg'){
+        whyUsFlg.value = !whyUsFlg.value 
+        isHome.value = false
+        srvcFlg.value = false
+        EsrvcFlg.value = false
+    }
 }
 function handleRoute(path){
     console.log(path,'path');
@@ -122,6 +136,7 @@ function handleWindow(path){
     isHome.value = false
     srvcFlg.value = false
     EsrvcFlg.value = false
+    whyUsFlg.value = false
     window.open(path)
 }
 function scrollInto(id){
