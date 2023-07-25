@@ -12,18 +12,6 @@
             <div class="company">
                 <h3>Company Name: <dfn>Hello pure gold llc</dfn></h3>
                 <table>
-                    <!-- <tr>
-                        <th>Name</th>
-                        <th>IBAN</th>
-                        <th>SWIFT Code</th>
-                        <th>Account Number</th>
-                    </tr>
-                    <tr>
-                        <td>Anowar Hossain</td>
-                        <td>AE470230000001004466163</td>
-                        <td>CBDUAEAD</td>
-                        <td>1004466163</td>
-                    </tr> -->
                     <tr>
                         <td>Name</td>
                         <td>Anowar Hossain</td>
@@ -41,6 +29,16 @@
                         <td>1004466163</td>
                     </tr>
                 </table>
+            </div>
+        </div>
+        <div class="crypto-wllt">
+            <div class="currency">
+                <h3>Binance Deposite (Tron) </h3>
+                <img src="../Assets/binance1.jpg" alt="crypto">
+            </div>
+            <div class="currency">
+                <h3>Binance Deposite (BTC)</h3>
+                <img src="../Assets/binance2.jpg" alt="crypto">
             </div>
         </div>
     </div>

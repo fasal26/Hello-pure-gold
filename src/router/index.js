@@ -37,7 +37,7 @@ export function createRouter() {
             { path: "/platform", name: 'Platform', component: Platform },
             { path: "/why-us", name: 'Why Choose Hello Pure Gold', component: Factors },
             { path: "/chairman-message", name: "Chairman's message", component: ChairmanMessage },
-            { path: "/products", name: 'Products', component: ProductImages },
+            { path: "/products/:type", name: 'Products', component: ProductImages },
             { path: "/account-opening-form", name: 'Account opening forum', component: AccountOpening },
             { path: "/account-funding", name: 'Account funding', component: AccountFunding },
             { path: "/auth", name: 'authentication', component: Auth },

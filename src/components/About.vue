@@ -96,7 +96,7 @@ import { onMounted } from "vue";
 onMounted(() => {
   let element = document.getElementById("app");
   new YT.Player('player', {
-      videoId: 'qj8YRilwzX0', // Replace with the YouTube video ID you want to autoplay
+      videoId: 'hEzJIY68kjU', // Replace with the YouTube video ID you want to autoplay
       playerVars: {
         autoplay: 1, // Enable autoplay
         mute: 1,

@@ -35,6 +35,12 @@
     justify-content: space-around;
 }
 
+.top-rsn > img{
+    width: 20%;
+    mix-blend-mode: darken;
+    aspect-ratio: 3/2;
+}
+
 .top-rsn > ul{
     flex-direction: column;
     gap: 15px;

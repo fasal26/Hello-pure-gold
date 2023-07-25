@@ -55,10 +55,24 @@
                     </ul>
                 </div>
             </div>
-            <p class="pointer underline-anim" 
+            <!-- <p class="pointer underline-anim" 
                 :class="$route.name && $route.name.includes('products') ? 'route-active' : ''"
                 @click.self="handleRoute('/products')"
-                >Products</p>
+                >Products</p> -->
+            <div class="nav-itm-container" @mouseover="handleMouse('mouseover','prd')" @mouseleave="handleMouse('mouseleave','prd')">
+                <p class="pointer underline-anim" @click="hndlDrpDwn('products')"
+                    :class="$route.name && $route.name.includes('Products') ? 'route-active' : ''"
+                    >Products</p>
+                <img src="../Assets/down-arrow-wh.png" alt="">
+                <div class="drp-dwn-container" v-if="prdFlg">
+                    <ul>
+                        <li @click.self="handleRoute('/products/gold')" class="pointer">Gold</li>
+                        <li @click.self="handleRoute('/products/silver')" class="pointer">Silver</li>
+                        <li @click.self="handleRoute('/products/platinum')" class="pointer">Platinum</li>
+                        <li @click.self="handleRoute('/products/palladium')" class="pointer">Palladium</li>
+                    </ul>
+                </div>
+            </div>
             <div class="nav-itm-container" @mouseover="handleMouse('mouseover','myacnt')" @mouseleave="handleMouse('mouseleave','myacnt')">
                 <p class="pointer underline-anim" @click="hndlDrpDwn('myAcnt')"
                     :class="$route.name && $route.name.includes('account') ? 'route-active' : ''"
@@ -109,6 +123,7 @@ let srvcFlg = ref(false)
 let EsrvcFlg = ref(false)
 let whyUsFlg = ref(false)
 let myAcntFlg = ref(false)
+let prdFlg = ref(false)
 onMounted(() => {
     // isMounted.value = true
 })
@@ -138,6 +153,9 @@ function handleMouse(type,val){
         case 'myacnt':
             myAcntFlg.value = type == 'mouseover' ? true : false
             break;
+        case 'prd':
+            prdFlg.value = type == 'mouseover' ? true : false
+            break;
     
         default:
             break;
@@ -148,6 +166,7 @@ function handleRoute(path, flg){
     srvcFlg.value = false
     whyUsFlg.value = false
     myAcntFlg.value = false
+    prdFlg.value = false
     router.push(path)
 }
 function handleWindow(path){
@@ -156,6 +175,7 @@ function handleWindow(path){
     EsrvcFlg.value = false
     whyUsFlg.value = false
     myAcntFlg.value = false
+    prdFlg.value = false
     window.open(path)
 }
 function hndlDrpDwn(flg){
@@ -167,6 +187,7 @@ function hndlDrpDwn(flg){
         EsrvcFlg.value = false
         whyUsFlg.value = false
         myAcntFlg.value = false
+        prdFlg.value = false
     }
     if(flg == 'srvcFlg'){
         srvcFlg.value = !srvcFlg.value 
@@ -174,6 +195,7 @@ function hndlDrpDwn(flg){
         EsrvcFlg.value = false
         whyUsFlg.value = false
         myAcntFlg.value = false
+        prdFlg.value = false
     }
     if(flg == 'EsrvcFlg'){
         EsrvcFlg.value = !EsrvcFlg.value 
@@ -181,6 +203,7 @@ function hndlDrpDwn(flg){
         srvcFlg.value = false
         whyUsFlg.value = false
         myAcntFlg.value = false
+        prdFlg.value = false
     }
     if(flg == 'whyUs'){
         whyUsFlg.value = !whyUsFlg.value 
@@ -188,6 +211,7 @@ function hndlDrpDwn(flg){
         srvcFlg.value = false
         EsrvcFlg.value = false
         myAcntFlg.value = false
+        prdFlg.value = false
     }
     if(flg == 'myAcnt'){
         myAcntFlg.value = !myAcntFlg.value 
@@ -195,6 +219,15 @@ function hndlDrpDwn(flg){
         srvcFlg.value = false
         EsrvcFlg.value = false
         whyUsFlg.value = false
+        prdFlg.value = false
+    }
+    if(flg == 'products'){
+        prdFlg.value = !prdFlg.value 
+        isHome.value = false
+        srvcFlg.value = false
+        EsrvcFlg.value = false
+        whyUsFlg.value = false
+        myAcntFlg.value = false
     }
 }
 function scrollInto(id){

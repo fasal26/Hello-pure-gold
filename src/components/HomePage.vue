@@ -11,7 +11,29 @@
       playsinline
       style="object-fit: fill; width: 100%; height: 600px"
     ></video> -->
-    <img src="../Assets/bannernew.jpg" alt="" style="width:100%;height:550px;object-fit:cover;" data-aos="zoom-in" data-aos-duration="3000">
+    <div class="banner-slides-container">
+      <Carousel items-to-show="1" :items-to-show="1" :wrap-around="true" :autoplay="4000" @slide-start="handleSlideChange">
+        <!-- <Slide key="1">
+            <div class="carousel__item">
+                <img src="../Assets/bannernew.jpg" alt="gold" style="width:100%;object-fit:cover;"/>
+            </div>
+        </Slide> -->
+        <Slide :key="0" >
+            <div class="carousel__item" style="height: 600px;">
+                <img src="../Assets/banner2.jpg" alt="gold" style="width:100%;object-fit:cover;" :class="{ 'zoom-in': currentIndex === 0 }"/>
+            </div>
+        </Slide>
+        <Slide :key="1" >
+            <div class="carousel__item" style="height: 600px;">
+                <img src="../Assets/banner3.jpg" alt="gold" style="width:100%;object-fit:cover;" :class="{ 'zoom-in': currentIndex === 1 }"/>
+            </div>
+        </Slide>
+        <template #addons>
+          <navigation />
+        </template>
+      </Carousel>
+    </div>
+    <!-- <img src="../Assets/bannernew.jpg" alt="" style="width:100%;height:550px;object-fit:cover;" data-aos="zoom-in" data-aos-duration="3000"> -->
     <h1 data-aos="fade" data-aos-duration="3000">Welcome to Hello Pure Gold</h1>
   </div>
   <div class="baba-abtus-conatiner" data-aos="fade-up">
@@ -208,6 +230,7 @@
           Services
         </li>
       </ul>
+      <img src="../Assets/toprsn.jpg" alt="">
       <ul class="baba-flex">
         <li class="baba-flex">
           <img src="../Assets/001-correct.png" alt="" id="correct" />Assaying Expertise
@@ -232,7 +255,9 @@
 </template>
 
 <script setup>
-import { onMounted } from "vue";
+import 'vue3-carousel/dist/carousel.css'
+import { Carousel, Pagination, Slide, Navigation } from 'vue3-carousel'
+import { onMounted, ref } from "vue";
 import { useRouter } from "vue-router";
 import LiveMarket from "./LiveMarket.vue";
 import Platform from "./Platform.vue";
@@ -244,7 +269,7 @@ const router = useRouter();
 onMounted(() => {
   carousel("prd-img-id");
   new YT.Player('player', {
-      videoId: 'qj8YRilwzX0', // Replace with the YouTube video ID you want to autoplay
+      videoId: 'hEzJIY68kjU', // Replace with the YouTube video ID you want to autoplay
       playerVars: {
         autoplay: 1, // Enable autoplay
         mute: 1,
@@ -287,4 +312,40 @@ function handleSlide(id) {
 function handleServices(id) {
   router.push(`/services/${id}`);
 }
+let currentIndex = ref(0)
+const handleSlideChange = (index) => {
+  console.log(index,'index');
+  const { slidingToIndex } = index
+  if(slidingToIndex == 2)
+    currentIndex.value = 0
+  else
+    currentIndex.value = slidingToIndex;
+};
 </script>
+
+<style scoped>
+
+.carousel :deep(.carousel__icon) {
+    fill: white;
+}
+
+.zoom-in {
+  animation: zoomInAnimation 4.5s linear infinite;
+  transform-origin: center;
+}
+
+@keyframes zoomInAnimation {
+  0% {
+    transform: scale(1);
+  }
+  /* 25% {
+    transform: scale(1.1);
+  }
+  75% {
+    transform: scale(1.2);
+  } */
+  100% {
+    transform: scale(1.3);
+  }
+}
+</style>

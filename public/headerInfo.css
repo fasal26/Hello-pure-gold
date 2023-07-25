@@ -188,8 +188,10 @@
   color: #ffffff;
   top: 39%;
   font-size: 60px;
-  max-width: 33%;
-  left: 30px;
+  max-width: 35%;
+  left: 32rem;
+  text-indent: 38px;
+    padding-left: 38px;
 }
 
 .logo{
