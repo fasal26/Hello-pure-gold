@@ -15,12 +15,13 @@
                 <!-- <strong>newsletter</strong> -->
                 <p>Contact details</p>
                 <div class="news-letter-items baba-flex-col">
-                    <p>+97143490037</p>
+                    <p>+971  43490037</p>
+                    <p>+971 501341604</p>
                     <p>anowar.48@gmail.com </p>
                 </div>
                 <p>Address</p>
                 <div class="news-letter-items baba-flex">
-                    <p>Office # 168, Level # 6, Gold Center Building Deira Gold Souk - Dubai, United Arab Emirates</p>
+                    <p>Office # 168, Level # 6, Gold Center Building, Deira, Gold Souk - Dubai, United Arab Emirates,</p>
                 </div>
                 <!-- <div class="email">
                     <input type="text" class="mail-input">
@@ -47,3 +48,6 @@
         </div>
     </div>
 </template>
+
+<script setup>
+</script>
