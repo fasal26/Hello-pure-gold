@@ -4,16 +4,15 @@
         <span class="overlay-el"></span>
     </div>
     <div class="baba-flex-col baba-svc-container">
+        <div class="deposit">
+            <p>Please send your Bank Deposit Receipt, Fund Transfer Confirmation, or Exchange Receipt to hellopuregoldllc@gmail.com along with your Bullion Account ID as a reference. If you need further assistance, feel free to contact our Customer Service at +971 501341604  or via email at hellopuregoldllc@gmail.com . </p>
+            <h3>Company Name: <dfn>Hello pure gold llc</dfn></h3>
+        </div>
         <div class="account-forum-container route-padd">
           <details class="pointer">
                 <summary>Transfer / Cash Deposit</summary>
                 <div class="funding-wrap">
-                    <div class="deposit">
-                        <!-- <h3>Transfer / Cash Deposit </h3> -->
-                        <p>Please send your Bank Deposit Receipt, Fund Transfer Confirmation, or Exchange Receipt to hellopuregoldllc@gmail.com along with your Bullion Account ID as a reference. If you need further assistance, feel free to contact our Customer Service at +971 501341604  or via email at hellopuregoldllc@gmail.com . </p>
-                    </div>
                     <div class="company">
-                        <h3>Bank Name: <dfn>Hello pure gold llc</dfn></h3>
                         <table>
                             <tr>
                                 <td>Bank</td>

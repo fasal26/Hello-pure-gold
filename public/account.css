@@ -67,7 +67,7 @@ th {
     gap: 35px;
 }
 
-.funding-wrap > .company > h3 > dfn{
+.deposit > h3 > dfn{
     color: #da9e16;
 }
 
@@ -92,4 +92,11 @@ th {
 
 .other-wrap{
     padding-top: 25px;
+}
+
+.deposit{
+    padding-bottom: 50px;
+    flex-direction: column;
+    display: flex;
+    gap: 15px;
 }

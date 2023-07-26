@@ -17,7 +17,7 @@
                 <div class="news-letter-items baba-flex-col">
                     <p>+971  43490037</p>
                     <p>+971 501341604</p>
-                    <p>anowar.48@gmail.com </p>
+                    <p>hellopuregoldllc@gmail.com</p>
                 </div>
                 <p>Address</p>
                 <div class="news-letter-items baba-flex">
