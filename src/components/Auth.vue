@@ -1,5 +1,5 @@
 <template>
-    <div class="baba-flex-col baba-svc-container" id="services">
+    <div class="baba-flex-col baba-svc-container auth" id="services">
       <!-- <h2 class="baba-flex">Login / Signup</h2> -->
       <div class="container">
             <h2>Login</h2>
@@ -19,6 +19,15 @@
 </template>
 
 <style scoped>
+
+.auth{
+  background-image: url(/Hello-pure-gold/images/login1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
 
 .container {
     width: 230px;
@@ -65,6 +74,12 @@ button {
 
 button:hover {
   background-color: #c8841d;
+}
+
+@media only screen and (max-width: 700px), only screen and (max-device-width: 700px) {
+  .auth{
+    background-position: right;
+  }
 }
 
 </style>

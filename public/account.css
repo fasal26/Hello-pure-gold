@@ -49,6 +49,7 @@ th {
 }
 
 .funding-wrap{
+    padding-top: 25px;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -73,10 +74,11 @@ th {
 .crypto-wllt{
     display: flex;
     justify-content: space-evenly;
+    padding-top: 25px;
 }
 
 .currency{
-    flex-basis: 35%;
+    flex-basis: 25%;
 }
 
 .currency > img{
@@ -86,4 +88,8 @@ th {
 
 .currency > h3{
     padding-bottom: 25px;
+}
+
+.other-wrap{
+    padding-top: 25px;
 }

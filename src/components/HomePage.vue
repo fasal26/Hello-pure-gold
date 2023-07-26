@@ -12,19 +12,19 @@
       style="object-fit: fill; width: 100%; height: 600px"
     ></video> -->
     <div class="banner-slides-container">
-      <Carousel items-to-show="1" :items-to-show="1" :wrap-around="true" :autoplay="4000" @slide-start="handleSlideChange">
+      <Carousel items-to-show="1" :autoplay="4000" :items-to-show="1" :wrap-around="true" @slide-start="handleSlideChange">
         <!-- <Slide key="1">
             <div class="carousel__item">
                 <img src="../Assets/bannernew.jpg" alt="gold" style="width:100%;object-fit:cover;"/>
             </div>
         </Slide> -->
         <Slide :key="0" >
-            <div class="carousel__item" style="height: 600px;">
+            <div class="carousel__item">
                 <img src="../Assets/banner2.jpg" alt="gold" style="width:100%;object-fit:cover;" :class="{ 'zoom-in': currentIndex === 0 }"/>
             </div>
         </Slide>
         <Slide :key="1" >
-            <div class="carousel__item" style="height: 600px;">
+            <div class="carousel__item">
                 <img src="../Assets/banner3.jpg" alt="gold" style="width:100%;object-fit:cover;" :class="{ 'zoom-in': currentIndex === 1 }"/>
             </div>
         </Slide>
@@ -314,7 +314,6 @@ function handleServices(id) {
 }
 let currentIndex = ref(0)
 const handleSlideChange = (index) => {
-  console.log(index,'index');
   const { slidingToIndex } = index
   if(slidingToIndex == 2)
     currentIndex.value = 0
@@ -329,6 +328,10 @@ const handleSlideChange = (index) => {
     fill: white;
 }
 
+.carousel :deep(.carousel__track) {
+    height: 35rem;
+  }
+
 .zoom-in {
   animation: zoomInAnimation 4.5s linear infinite;
   transform-origin: center;
@@ -338,14 +341,14 @@ const handleSlideChange = (index) => {
   0% {
     transform: scale(1);
   }
-  /* 25% {
-    transform: scale(1.1);
-  }
-  75% {
-    transform: scale(1.2);
-  } */
   100% {
     transform: scale(1.3);
+  }
+}
+
+@media only screen and (max-width: 700px), only screen and (max-device-width: 700px) {
+  .carousel :deep(.carousel__track) {
+    height: initial;
   }
 }
 </style>

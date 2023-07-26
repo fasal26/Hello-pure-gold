@@ -45,10 +45,31 @@
                         <li @click.self="handleWindow('https://www.forexfactory.com/news')" class="pointer">News</li>
                     </ul>
                 </div>
-                <div class="dialog-items doc-flex" @click="handleRoute('/products')">
+                <div class="dialog-items doc-flex" @click="hndlDrpDwn('prdFlg')">
                     <!-- <img src="../Assets/blog.svg" alt=""> -->
                     <p>Products</p>
-                    <!-- <img src="../Assets/down-arrow.png" alt="" style="width: 30px;height: 30px;position: relative;bottom: 3px;"> -->
+                    <img src="../Assets/down-arrow-wh.png" alt="">
+                </div>
+                <div class="drp-dwn-container" v-if="prdFlg">
+                    <ul>
+                        <li @click.self="handleRoute('/products/gold')" class="pointer">Gold</li>
+                        <li @click.self="handleRoute('/products/silver')" class="pointer">Silver</li>
+                        <li @click.self="handleRoute('/products/platinum')" class="pointer">Platinum</li>
+                        <li @click.self="handleRoute('/products/palladium')" class="pointer">Palladium</li>
+                    </ul>
+                </div>
+                <div class="dialog-items doc-flex" @click="hndlDrpDwn('myActFlg')">
+                    <!-- <img src="../Assets/blog.svg" alt=""> -->
+                    <p>My account</p>
+                    <img src="../Assets/down-arrow-wh.png" alt="">
+                </div>
+                <div class="drp-dwn-container" v-if="myActFlg">
+                    <ul>
+                        <li @click.self="handleRoute('/account-opening-form')"
+                            :style="$route.name && $route.name.includes('Account opening forum') ? 'background-color: #c9a046;' : ''" class="pointer">Account opening forum</li>
+                        <li @click.self="handleRoute('/account-funding')" 
+                            :style="$route.name && $route.name.includes('Account funding') ? 'background-color: #c9a046;' : ''" class="pointer">Account funding</li>
+                    </ul>
                 </div>
                 <div class="dialog-items doc-flex" @click="hndlDrpDwn('whyUsFlg')">
                     <!-- <img src="../Assets/blog.svg" alt=""> -->
@@ -102,31 +123,56 @@ let isHome = ref(false)
 let srvcFlg = ref(false)
 let EsrvcFlg = ref(false)
 let whyUsFlg = ref(false)
+let prdFlg = ref(false)
+let myActFlg = ref(false)
 function hndlDrpDwn(flg){
     if(flg == 'isHome'){
         isHome.value = !isHome.value
         srvcFlg.value = false
         EsrvcFlg.value = false
+        prdFlg.value = false
+        myActFlg.value = false
     }
     if(flg == 'srvcFlg'){
         srvcFlg.value = !srvcFlg.value 
         isHome.value = false
         EsrvcFlg.value = false
+        prdFlg.value = false
+        myActFlg.value = false
     }
     if(flg == 'EsrvcFlg'){
         EsrvcFlg.value = !EsrvcFlg.value 
         isHome.value = false
         srvcFlg.value = false
+        prdFlg.value = false
+        myActFlg.value = false
     }
     if(flg == 'whyUsFlg'){
         whyUsFlg.value = !whyUsFlg.value 
         isHome.value = false
         srvcFlg.value = false
         EsrvcFlg.value = false
+        prdFlg.value = false
+        myActFlg.value = false
+    }
+    if(flg == 'prdFlg'){
+        prdFlg.value = !prdFlg.value 
+        isHome.value = false
+        srvcFlg.value = false
+        EsrvcFlg.value = false
+        whyUsFlg.value = false
+        myActFlg.value = false
+    }
+    if(flg == 'myActFlg'){
+        myActFlg.value = !prdFlg.value 
+        isHome.value = false
+        srvcFlg.value = false
+        EsrvcFlg.value = false
+        whyUsFlg.value = false
+        prdFlg.value = false
     }
 }
 function handleRoute(path){
-    console.log(path,'path');
     router.push(path)
     let displayFlg = document.getElementById('dlg')
         displayFlg.style.display = 'none'
@@ -137,6 +183,8 @@ function handleWindow(path){
     srvcFlg.value = false
     EsrvcFlg.value = false
     whyUsFlg.value = false
+    prdFlg.value = false
+    myActFlg.value = false
     window.open(path)
 }
 function scrollInto(id){

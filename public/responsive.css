@@ -22,9 +22,12 @@
     }
 
     .banner-container > h1 {
-        top: 17%;
-        font-size: 35px;
-        max-width: 65%;
+        top: 37%;
+        font-size: 25px;
+        max-width: 80%;
+        left: 30px;
+        text-indent: -39px;
+        padding-left: 99px;
     }
 
     .banner-container > img {
@@ -101,9 +104,9 @@
         height: initial;
     }
 
-    /* .baba-svc-container > h2 {
+    .baba-svc-container > h2 {
         padding: 30px 0;
-    } */
+    }
 
     .card {
         max-width: initial;
@@ -231,6 +234,19 @@
     .baba-prd-cntnr {
         justify-content: center;
         gap: 30px;
+    }
+
+    .top-rsn > img {
+        display: none;
+    }
+
+    .crypto-wllt {
+        padding-top: 50px;
+        justify-content: space-between;
+    }
+
+    .currency {
+        flex-basis: 45%;
     }
 
     /* THE END */

@@ -97,7 +97,6 @@ onMounted(() => {
 function scrollInto(id){
     if(id){
         let element = document.getElementById(id)
-        console.log(element,'element');
         if(element)
             element.scrollIntoView({
                 behavior: 'smooth'
