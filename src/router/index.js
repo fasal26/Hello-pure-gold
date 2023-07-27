@@ -20,7 +20,7 @@ const AccountOpening = () => import("../components/AccountOpening.vue")
 const AccountFunding = () => import("../components/AccountFunding.vue")
 export function createRouter() {
     const router =  _createRouter({
-        history: createWebHistory('/Hello-pure-gold/'),
+        history: createWebHistory(),
         // base: '/baba-gold-website/',
         routes: [
             { path: "/", name: 'HomePage', component: HomePage },

@@ -21,7 +21,7 @@
 <style scoped>
 
 .auth{
-  background-image: url(/Hello-pure-gold/images/login1.jpg);
+  background-image: url(/images/login1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
