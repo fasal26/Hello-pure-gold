@@ -263,6 +263,16 @@ import LiveMarket from "./LiveMarket.vue";
 const router = useRouter();
 
 onMounted(() => {
+  if (typeof YT !== 'undefined' && typeof YT.Player !== 'undefined') {
+      initYouTubePlayer();
+    } else {
+      window.onYouTubeIframeAPIReady = () => {
+        initYouTubePlayer();
+      };
+    }
+});
+
+function initYouTubePlayer(){
   new YT.Player('player', {
       videoId: 'hEzJIY68kjU', // Replace with the YouTube video ID you want to autoplay
       playerVars: {
@@ -270,7 +280,7 @@ onMounted(() => {
         mute: 1,
       },
     });
-});
+}
 
 function handleRoute(path) {
   router.push(path);
