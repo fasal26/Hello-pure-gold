@@ -10,12 +10,8 @@ import {
 
 const HomePage = () => import("../components/HomePage.vue")
 const About = () => import("../components/About.vue")
-const Story = () => import("../components/Story.vue")
 const Services = () => import("../components/Services.vue")
-const Mission  = () => import("../components/Mission.vue")
 const Trading = () => import("../components/Trading.vue")
-const DecisionMaking = () => import("../components/DescisionMaking.vue")
-const Platform = () => import("../components/Platform.vue")
 const Factors = () => import("../components/Factors.vue")
 const ChairmanMessage = () => import("../components/ChairmanMessage.vue")
 const ProductImages = () => import("../components/ProductImages.vue")
@@ -29,12 +25,8 @@ export function createRouter() {
         routes: [
             { path: "/", name: 'HomePage', component: HomePage },
             { path: "/about", name: 'About', component: About },
-            { path: "/our-vision", name: 'Our Vision', component: Story },
-            { path: "/our-mission", name: 'Our Mission', component: Mission },
             { path: "/services/:id", name: 'Services', component: Services },
             { path: "/aml-policy", name: 'Anti-Money Laundering (AML) Policy', component: Trading },
-            { path: "/decision-making", name: 'DecisionMaking', component: DecisionMaking },
-            { path: "/platform", name: 'Platform', component: Platform },
             { path: "/why-us", name: 'Why Choose Hello Pure Gold', component: Factors },
             { path: "/chairman-message", name: "Chairman's message", component: ChairmanMessage },
             { path: "/products/:type", name: 'Products', component: ProductImages },

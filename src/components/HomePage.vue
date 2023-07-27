@@ -214,39 +214,39 @@
     <div class="top-rsn">
       <ul class="baba-flex">
         <li class="baba-flex">
-          <img src="../Assets/001-correct.png" alt="" id="correct" />Risk Management
+          <img src="../Assets/001-correct.png" alt="" id="correct" loading="lazy"/>Risk Management
         </li>
         <li class="baba-flex">
-          <img src="../Assets/001-correct.png" alt="" id="correct" />Wholesale Trading
+          <img src="../Assets/001-correct.png" alt="" id="correct" loading="lazy"/>Wholesale Trading
         </li>
         <li class="baba-flex">
-          <img src="../Assets/001-correct.png" alt="" id="correct" />Margin Trading
+          <img src="../Assets/001-correct.png" alt="" id="correct" loading="lazy"/>Margin Trading
         </li>
         <li class="baba-flex">
-          <img src="../Assets/001-correct.png" alt="" id="correct" />Global Deliveries
+          <img src="../Assets/001-correct.png" alt="" id="correct" loading="lazy"/>Global Deliveries
         </li>
         <li class="baba-flex">
-          <img src="../Assets/001-correct.png" alt="" id="correct" />Reliable Refining
+          <img src="../Assets/001-correct.png" alt="" id="correct" loading="lazy"/>Reliable Refining
           Services
         </li>
       </ul>
       <img src="../Assets/toprsn.jpg" alt="">
       <ul class="baba-flex">
         <li class="baba-flex">
-          <img src="../Assets/001-correct.png" alt="" id="correct" />Assaying Expertise
+          <img src="../Assets/001-correct.png" alt="" id="correct" loading="lazy"/>Assaying Expertise
         </li>
         <li class="baba-flex">
-          <img src="../Assets/001-correct.png" alt="" id="correct" />Purity Testing
+          <img src="../Assets/001-correct.png" alt="" id="correct" loading="lazy"/>Purity Testing
         </li>
         <li class="baba-flex">
           <img src="../Assets/001-correct.png" alt="" id="correct" />Gold Location Swaps
         </li>
         <li class="baba-flex">
-          <img src="../Assets/001-correct.png" alt="" id="correct" />Foreign Currency
+          <img src="../Assets/001-correct.png" alt="" id="correct" loading="lazy"/>Foreign Currency
           Pricing
         </li>
         <li class="baba-flex">
-          <img src="../Assets/001-correct.png" alt="" id="correct" />Trusted Gold
+          <img src="../Assets/001-correct.png" alt="" id="correct" loading="lazy"/>Trusted Gold
           Wholesalers
         </li>
       </ul>
@@ -260,14 +260,9 @@ import { Carousel, Pagination, Slide, Navigation } from 'vue3-carousel'
 import { onMounted, ref } from "vue";
 import { useRouter } from "vue-router";
 import LiveMarket from "./LiveMarket.vue";
-import Platform from "./Platform.vue";
-import Factors from "./Factors.vue";
-import Trading from "./Trading.vue";
-import DescisionMaking from "./DescisionMaking.vue";
 const router = useRouter();
 
 onMounted(() => {
-  carousel("prd-img-id");
   new YT.Player('player', {
       videoId: 'hEzJIY68kjU', // Replace with the YouTube video ID you want to autoplay
       playerVars: {
@@ -279,35 +274,6 @@ onMounted(() => {
 
 function handleRoute(path) {
   router.push(path);
-}
-const carousel = (id) => {
-  const slider = document.getElementById(id);
-  if (id && slider) {
-    let isdown;
-    let startX;
-    let scrollLeft;
-    slider.addEventListener("mousedown", (e) => {
-      isdown = true;
-      startX = e.pageX - slider.offsetLeft;
-      scrollLeft = slider.scrollLeft;
-    });
-    document.addEventListener("mouseup", (e) => {
-      isdown = false;
-    });
-    slider.addEventListener("mousemove", (e) => {
-      document.getElementById(id).style.scrollBehavior = "auto";
-      e.preventDefault();
-      if (!isdown) return;
-      const x = e.pageX - slider.offsetLeft;
-      const walk = x - startX;
-      slider.scrollLeft = scrollLeft - walk;
-    });
-  }
-};
-function handleSlide(id) {
-  const slider = document.getElementById(id);
-  slider.style.scrollBehavior = "smooth";
-  slider.scrollLeft = slider.scrollLeft + 200;
 }
 function handleServices(id) {
   router.push(`/services/${id}`);
