@@ -31,11 +31,25 @@
         </div>
         <div class="footer-items2-container">
             <div class="social-media">
-                <img class="pointer" width="30" height="30" src="https://img.icons8.com/ios-filled/50/FFFFFF/whatsapp--v1.png" alt="whatsapp--v1"/>
-                <img class="pointer" width="30" height="30" src="https://img.icons8.com/ios-filled/50/FFFFFF/linkedin-circled--v1.png" alt="linkedin-circled--v1"/>
-                <img class="pointer" width="30" height="30" src="https://img.icons8.com/ios-filled/50/FFFFFF/facebook-circled--v1.png" alt="facebook-circled--v1"/>
-                <img class="pointer" width="30" height="30" src="https://img.icons8.com/ios-filled/50/FFFFFF/twitter.png" alt="twitter"/>
-                <img class="pointer" width="30" height="30" src="https://img.icons8.com/ios-filled/50/FFFFFF/youtube-play.png" alt="youtube-play"/>
+                <a href="https://api.whatsapp.com/send?phone=97143490037" target="_blank">
+                    <img class="pointer" width="30" height="30" src="https://img.icons8.com/ios-filled/50/FFFFFF/whatsapp--v1.png" alt="whatsapp--v1"/>
+                </a>
+                <a href="https://www.instagram.com/hellopuregold/" target="_blank">
+                    <img class="pointer" width="30" height="30" src="https://img.icons8.com/external-tanah-basah-basic-outline-tanah-basah/24/FFFFFF/external-Instagram-social-media-tanah-basah-basic-outline-tanah-basah.png" alt="external-Instagram-social-media-tanah-basah-basic-outline-tanah-basah"/>
+                </a>
+                <a href="https://t.me/HELLOPUREGOLD" target="_blank">
+                    <img class="pointer" width="30" height="30" src="https://img.icons8.com/ios-filled/50/FFFFFF/telegram.png" alt="telegram"/>
+                </a>
+                <!-- <img class="pointer" width="30" height="30" src="https://img.icons8.com/ios-filled/50/FFFFFF/linkedin-circled--v1.png" alt="linkedin-circled--v1"/> -->
+                <a href="https://www.facebook.com/profile.php?id=100091422304102" target="_blank">
+                    <img class="pointer" width="30" height="30" src="https://img.icons8.com/ios-filled/50/FFFFFF/facebook-circled--v1.png" alt="facebook-circled--v1"/>
+                </a>
+                <a href="https://twitter.com/HelloPureGold" target="_blank">
+                    <img class="pointer" width="30" height="30" src="https://img.icons8.com/ios-filled/50/FFFFFF/twitter.png" alt="twitter"/>
+                </a>
+                <a href="https://www.youtube.com/channel/UCdfq1UwRc4dBlEv-7A2OY1g" target="_blank">
+                    <img class="pointer" width="30" height="30" src="https://img.icons8.com/ios-filled/50/FFFFFF/youtube-play.png" alt="youtube-play"/>
+                </a>
             </div>
             <div class="store">
                 <a href="https://play.google.com/store/apps/details?id=com.artifitia.hello_gold_app" rel="noopener" target="_blank">
